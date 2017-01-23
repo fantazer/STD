@@ -1,0 +1,143 @@
+// ============================ Curent color ============================
+
+navy = #001F3F
+blue = #006891
+aqua = #7FDBFF
+teal = #39CCCC
+olive = #3D9970
+green = #2ECC40
+lime = #01FF70
+yellow = #FFDC00
+orange = #ff8100
+red = #ed3030
+fuchsia = #F012BE
+purple = #B10DC9
+maroon = #85144B
+white = #FFFFFF
+silver = #DDDDDD
+gray = #a6a7a9
+black = #282e3b
+
+$main-text-color = black
+$link-color = blue
+$link-color-visited = grey
+$link-color-hover = black
+
+//  ============================ Typography ============================ 
+
+//webfont('RUB', 'rouble-webfont', 'normal')
+//Add fotn rub write .rub a - (a,b,c,d - change type font)
+
+
+OpenSans =  'Open Sans', sans-serif;
+Lato =  'Lato', sans-serif;
+$v-font =  Arial
+
+$weigh-light = 300
+$weigh-normal = 400
+$weigh-bold = 700
+
+typeSize(fontSm,font)
+	+below(768px)
+		font-size font px
+	font-size fontSm px
+
+.type--xs
+	typeSize(12,10)
+	
+.type--sm
+	typeSize(14,12)
+
+.type--main
+	typeSize(16,14)
+
+.type--lg
+	typeSize(20,16)
+
+.type--xl
+	typeSize(28,18)
+
+	
+// ============================ Buttons ============================
+
+btnStyle(bg-btn,color-btn)
+	background bg-btn
+	color color-btn
+	border 1px solid color-btn
+	&:hover
+		background darken(bg-btn,20)
+		color color-btn
+
+btnStyleLight(br-btn,color-btn)
+	color color-btn
+	border br-btn solid color-btn
+	&:hover
+		color darken(color-btn,20)
+		border br-btn solid darken(color-btn,20)
+
+.btn
+	tr(all)
+	box-shadow inset 0 0 0 rgba(243, 128, 12, 0.33)
+	border-radius 2px
+	border 1px solid #ea3d03
+	background-image linear-gradient(130deg, #f3800c 0%, #ea3d03 100%);
+	padding 20px 35px
+	color white
+	color #ffffff
+	font-family Arial
+	font-size 16px
+	font-weight 700
+	display inline-block
+	&:hover
+		cursor pointer
+		
+.btn--sm
+	@extend .btn
+	font-size 10px
+	padding 5px 10px
+	
+.btn--md
+	@extend .btn
+	font-size 12px
+	padding 10px 20px
+	
+.btn--lg
+	@extend .btn
+	font-size 20px
+	padding 10px 30px
+
+.btn--mobile
+	@extend .btn
+	+below(768px)
+		width 100%
+		text-align center
+
+.btn--green
+	@extend .btn
+	btnStyle(green,white)
+	
+.btn--green-light
+	@extend .btn
+	btnStyleLight(1px,green)
+	
+button
+	font-family $v-font
+
+// ============================ Inputs ============================
+
+input,textarea,select
+	border 0px
+	padding 10px 15px
+	resize: none
+	outline: 0 !important
+	border-radius 4px
+	font-family $v-font
+	display block!important
+	margin-bottom 10px
+	font-size 14px
+	color #202a39
+	font-family Arial
+	focus(green)
+	
+placeholder(#202a39)
+

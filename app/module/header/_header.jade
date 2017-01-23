@@ -1,0 +1,23 @@
+mixin header()
+	//block header
+	.header
+		.main-cont
+			.header-wrp
+				a(href="/").header-logo
+					img(src="img/logo-light.png", alt="")
+				.header-cnt
+					.header-info
+						.header-slogan
+							span Аутсорсинг и <br> лизинг персонала
+						.header-time
+							.header-time__el С 07:00 до 21:00 Пн - Пт
+							.header-time__el С 01:00 до 08:00 Сб - Вс
+						a(href="#").header-contact
+							.header-contact__phone +7 495 401 73 78
+							.header-contact__mail infostdgroup@strgroup.com
+						a(href="#").header-call.btn Позвонить нам
+					.header-nav
+						a(href="#").header-nav__el.header-nav__el--active О компании
+						- each val in top_nav
+							a(href="#").header-nav__el #{val.el}
+	//block header end

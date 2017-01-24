@@ -34,28 +34,43 @@ $(document).ready(function(){
 	}
 	hideToggle('.icon-bars','.top-menu_link');*/
 
+	//====== sliders =====
 
-	/* ###### init RangeSLider  ######*/
-	/* ###### bower i --save-dev nouislider  ######*/
-	/* ###### https://gist.github.com/fantazer/2bdc4e6a63708e143718ffa7c32eae17  ######*/
+	//slider-clients
+	$(".slider-items__wraper").owlCarousel({
+	 items : 5,
+	responsive : {
+	 		0:{
+			 	items : 4
+		 	},
+		 	768:{
+			 	items : 3
+		 	},
+		 	1024:{
+			 	items : 4
+		 	},
+		 	1280:{
+			 	items : 5
+		 	},
+	  },
+	 margin:true,
+	 autoHeight : true,
+	 dots: true,
+	 autoplay : true,
+	 singleItem:true,
+	 nav:true,
+	 loop:true,
+	 fluidSpeed:1000,
+	 autoplayTimeout:4000,
+	 navText:[
+			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
+			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
+	 	]
+	 }
+	);
 
-	/*var slider = document.getElementById('rangeSlider'); //Элемент
+	//====== sliders =====
 
-	noUiSlider.create(slider, {
-		start: [0, 100],
-		connect: true,
-		step: 10,
-		range: {
-			'min': 0,
-			'max': 100,
-		},
-		pips: { // Show a scale with the slider
-			mode: 'steps',
-			density: 4
-		}
-	});*/
-
-	
 })
 
 //cash SVG

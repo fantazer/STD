@@ -1,3 +1,33 @@
 mixin footer()
 	//block footer
+	.footer
+		.main-cont
+			.footer-wraper
+				.footer-nav
+					.footer-nav__col.footer-nav__col--menu
+						- each val in top_nav
+							a(href="#").footer-nav__el #{val.el}
+					.footer-nav__col
+						.footer-nav__title Услуги
+						- each val in service
+							a(href="#").footer-nav__el #{val.el}
+					.footer-nav__col
+						.footer-nav__title Кейсы
+						- each val in keys
+							a(href="#").footer-nav__el #{val.el}
+				.footer-form
+					.footer-contact
+						.footer-contact__logo
+							img(src="img/logo-dark.png", alt="")
+						.footer-contact__info
+							.footer-contact__phone +7 495 401 73 78
+							.footer-contact__adr ул. Варшавское шоссе д. 125
+					.footer-form__wrap
+						form(action="").footer-form__el
+							input(type="text" placeholder="Введите ваше имя")
+							input(type="text" placeholder="Введите ваш номер телефона")
+							input(type="submit" class="btn" value="Отправить")
+			.footer-copy
+				.footer-copy__text © 2006 -2016 ООО «СервисСервис»
+
 	//block footer end

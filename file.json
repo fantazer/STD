@@ -1,7 +1,9 @@
 {
 	"block":{
 		"header":"header",
-		"footer":"footer"
+		"footer":"footer",
+		"slider-clients":"slider-clients",
+		"slider-pers":"slider-pers"
 	},
 	"page":{
 		"index":"index"

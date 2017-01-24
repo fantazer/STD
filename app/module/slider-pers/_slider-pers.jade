@@ -1,0 +1,14 @@
+mixin slider-pers()
+	//block slider-pers
+	.main-cont
+		.slider-items.slider-items-pers
+			.slider-items-title Наш персонал
+			.slider-items__wraper.owl-carousel
+				- for (var j = 0; j< 3; j++)
+					- for (var i = 0; i < 5; i++)
+						a(href="#").slider-items-pers__el
+							.slider-items-pers__img(style="background-image:url('img/personal-#{i+1}.png')")
+							.slider-items-pers__title Грузчики
+							.slider-items-pers__pay от 110 Р
+								
+	//block slider-pers end

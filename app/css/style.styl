@@ -38,5 +38,48 @@ body
 	
 .main-cont
 	center(1150px,10px)
+.wraper-general
+	f()
+	fl()
+	min-height 100vh
+	
+.container-general
+	flex-grow 1
+.owl-next,.owl-prev
+	position absolute
+	top 50%
+	margin-top -5%
+	color white
+	font-size 40px
+	cp()
+.owl-carousel
+	position relative
+.owl-prev
+	+below(768px)
+		left 2%
+	left 0%
+.owl-next
+	+below(768px)
+		right 2%
+	right 0%
+.slider-control
+	size 20
+	fill grey
+.owl-dots
+	width 100%
+	flex(mid)
+	margin-top 0px
+	position relative
+	z-index 2000
+.owl-dot
+	round()
+	margin 5px
+	width 10px
+	height 10px
+	background white
+	border 1px solid grey
+.owl-dot.active
+	background orange
+	border 0
 	
 @import "../module/**/*"

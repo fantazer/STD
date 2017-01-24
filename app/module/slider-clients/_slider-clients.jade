@@ -1,0 +1,10 @@
+mixin slider-clients()
+	//block slider-clients
+	.main-cont
+		.slider-items.slider-items-clients
+			.slider-items-title Наши клиенты
+			.slider-items__wraper.owl-carousel
+				- for (var j = 0; j< 3; j++)
+					- for (var i = 0; i < 5; i++)
+						.slider-items__el(style="background-image:url('img/client-#{i+1}.png')")
+	//block slider-clients end

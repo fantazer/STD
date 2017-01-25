@@ -4,6 +4,15 @@ include ../module/**/*.jade
 .wraper-general
 	+header()
 	.container-general
+			+bread()
+			.main-cont
+				.title-page Вакансии
+				.container.container--content
+					.container__info
+						- for (var i = 0; i < 5; i++)
+							+vacany-el()
+					.container__toolbar
+						+reward()
 	+slider-clients()
 	+slider-pers()
 	+footer()

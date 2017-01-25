@@ -5,3 +5,9 @@
 mixin icon(name,cls)
 	svg(class=cls)
 		use(xlink:href="#"+name)
+
+mixin linkmore(info)
+	.link-more 
+		.link-more__text=info
+		.link-more__icon
+			+icon("arrow-right","icon")

@@ -1,0 +1,14 @@
+.bread
+	margin-bottom 50px
+.bread__el
+	font-size 12px
+	color black
+	position relative
+	display inline-block
+	margin-right 5px
+	&:first-child
+		color grey
+	&:not(:last-child):after
+		content ' >'
+		margin-left 5px
+		color black

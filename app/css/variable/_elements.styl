@@ -1,0 +1,85 @@
+.wraper-general
+	f()
+	fl()
+	min-height 100vh
+.container-general
+	flex-grow 1
+.container
+	margin-bottom 40px
+.owl-next,.owl-prev
+	position absolute
+	top 50%
+	margin-top -5%
+	color white
+	font-size 40px
+	cp()
+.owl-carousel
+	position relative
+.owl-prev
+	+below(768px)
+		left 2%
+	left 0%
+.owl-next
+	+below(768px)
+		right 2%
+	right 0%
+.slider-control
+	size 20
+	fill grey
+.owl-dots
+	width 100%
+	flex(mid)
+	margin-top 0px
+	position relative
+	z-index 2000
+.owl-dot
+	round()
+	margin 5px
+	width 10px
+	height 10px
+	background white
+	border 1px solid grey
+.owl-dot.active
+	background orange
+	border 0
+.title-page
+	text-align center
+	color #282e3b
+	font-family OpenSans
+	font-size 48px
+	font-weight 300
+	margin-bottom 90px
+.container--content
+	flex(between)
+	align-items flex-start
+.container__info
+	width 70%
+	margin-right 15px
+.container__toolbar
+	width 30%
+
+.link-more 
+	f()
+	&:hover
+		.link-more__text
+			color orange
+		.icon
+			fill orange
+.link-more__text
+	up()
+	tr(all)
+	color #a6a7a9
+	font-family Lato
+	font-size 14px
+	font-weight 300
+	margin-right 10px
+.link-more__icon
+	fill #a6a7a9
+	.icon
+		tr(all)
+		size 15
+
+.box
+	bsh()
+	br(4px)  
+	background white

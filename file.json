@@ -3,7 +3,12 @@
 		"header":"header",
 		"footer":"footer",
 		"slider-clients":"slider-clients",
-		"slider-pers":"slider-pers"
+		"slider-pers":"slider-pers",
+		"bread":"bread",
+		"reward":"reward",
+		"knowlage":"knowlage",
+		"keys":"keys",
+		"vacany-el":"vacany-el"
 	},
 	"page":{
 		"index":"index"

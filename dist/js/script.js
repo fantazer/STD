@@ -56,9 +56,26 @@ $(document).ready(function(){
 	 margin:true,
 	 autoHeight : true,
 	 dots: true,
-	 autoplay : true,
+	 autoplay : false,
 	 singleItem:true,
 	 nav:true,
+	 loop:true,
+	 fluidSpeed:1000,
+	 autoplayTimeout:4000,
+	 navText:[
+			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
+			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
+	 	]
+	 }
+	);
+
+	$(".slider-one-item").owlCarousel({
+	 items : 1,
+	 margin:true,
+	 autoHeight : true,
+	 dots: true,
+	 autoplay : false,
+	 singleItem:true,
 	 loop:true,
 	 fluidSpeed:1000,
 	 autoplayTimeout:4000,

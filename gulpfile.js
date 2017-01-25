@@ -458,7 +458,7 @@ gulp.task('build:ftp',function(){
 		'screenshot',
 		'guide',
 		'ftp',
-		'template'
+		//'template'
 	)
 });
 

@@ -1,0 +1,13 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+.wraper-general
+	+header()
+	.container-general
+			+bread()
+			.main-cont
+				.title-page Прайс
+				+table-price()
+	+slider-pers()
+	+footer()
+include ./block_html/_script.jade

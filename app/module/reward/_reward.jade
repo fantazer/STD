@@ -3,10 +3,12 @@ mixin reward()
 	.reward
 		.reward__wraper
 			.reward__slider.slider-one-item.owl-carousel
-				- for (var i = 0; i < 4; i++)
 					a(href="#").reward__slider-el
 						.reward__slider-el-img(style="background-image:url('img/reward-1.png')")
 						.reward__slider-el-text HeadHunter «Высокий уровень привлекательности работодателя» 
+					a(href="#").reward__slider-el
+						.reward__slider-el-img(style="background-image:url('img/reward-1.png')")
+						.reward__slider-el-text  HeadHunter «Высокий уровень привлекательности работодателя»  HeadHunter «Высокий уровень привлекательности работодателя» 
 		.reward__get
 			a(href="#").reward__get__link
 				+linkmore('все регалии')

@@ -92,6 +92,7 @@ btnStyleLight(br-btn,color-btn)
 	display inline-block
 	&:hover
 		cursor pointer
+		background-image linear-gradient(30deg, #f3800c 0%, #ea3d03 80%); 
 		
 .btn--sm
 	@extend .btn
@@ -114,9 +115,14 @@ btnStyleLight(br-btn,color-btn)
 		width 100%
 		text-align center
 
-.btn--green
+.btn--light
 	@extend .btn
-	btnStyle(green,white)
+	&:hover
+		background orange
+		color white!important
+	tr(all) 
+	color black
+	background none 
 	
 .btn--green-light
 	@extend .btn
@@ -139,7 +145,6 @@ input,textarea,select
 	font-size 14px
 	color #202a39
 	font-family Arial
-	focus(green)
-	
-placeholder(#202a39)
+	focus(orange)
+	placeholder(#202a39)
 

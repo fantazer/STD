@@ -8,9 +8,13 @@
 		"reward":"reward",
 		"knowlage":"knowlage",
 		"keys":"keys",
-		"vacany-el":"vacany-el"
+		"vacany-el":"vacany-el",
+		"table-price":"table-price",
+		"contact":"contact"
 	},
 	"page":{
-		"index":"index"
+		"vacany":"vacany",
+		"money":"money",
+		"contact":"contact"
 	}
 }

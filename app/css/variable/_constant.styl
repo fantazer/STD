@@ -59,7 +59,12 @@ typeSize(fontSm,font)
 .type--xl
 	typeSize(28,18)
 
-	
+h1,h2,h3,h4,h5,h6{
+	margin 0
+	margin-bottom 10px
+	line-height normal 
+	font-family Lato
+}
 // ============================ Buttons ============================
 
 btnStyle(bg-btn,color-btn)
@@ -93,6 +98,7 @@ btnStyleLight(br-btn,color-btn)
 	&:hover
 		cursor pointer
 		background-image linear-gradient(30deg, #f3800c 0%, #ea3d03 80%); 
+		color white
 		
 .btn--sm
 	@extend .btn

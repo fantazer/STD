@@ -84,6 +84,17 @@ $(document).ready(function(){
 	 	]
 	 }
 	);
+	$(".slider-review-wraper").owlCarousel({
+		items:1,
+		 dots: true,
+		 autoplay : false,
+		 singleItem:true,
+		 fluidSpeed:1000,
+		 autoplayTimeout:4000,
+		 stagePadding: 0,
+		 rewindNav: false
+	 }
+	);
 
 	//====== sliders =====
 

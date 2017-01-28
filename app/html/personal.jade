@@ -1,0 +1,18 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+.wraper-general
+	+header()
+	.container-general
+			+bread()
+			.main-cont
+				.title-page Персонал
+				.box-text.box
+					.type  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolores sint mollitia distinctio, aut facilis ut, soluta, quo ipsam, ad autem! Corporis, itaque incidunt. Provident animi aliquam illum, maiores incidunt, rem sit dignissimos aperiam qui cupiditate eligendi illo, esse quidem fugiat? Corrupti ab, esse, nemo iusto dolorum dignissimos aut eius eum a optio quos, libero ipsa. Error hic dolorem itaque voluptatem doloribus vel quia illo, deleniti dolore. Maxime eius, cumque saepe, porro quo oribus voluptatem beatae quisquam.
+				+personal-galary()
+				+get-more('Еще фотографии')
+				+two-botton-block()
+
+	+slider-pers()
+	+footer()
+include ./block_html/_script.jade

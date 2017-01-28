@@ -53,11 +53,9 @@
 	flex(between)
 	align-items flex-start
 .container__info
-	width 70%
-	margin-right 15px
+	width 68%
 .container__toolbar
 	width 30%
-
 .link-more 
 	f()
 	&:hover
@@ -91,3 +89,24 @@ table tbody tr:nth-child(odd) td, table tbody tr:nth-child(odd) th
 .map
 	height 400px
 	margin-bottom -30px
+
+.box-text
+	padding 20px
+
+.get-more
+	flex(mid)
+	margin 30px 0
+
+.container__info--light
+	@extend .box
+	padding 20px
+
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility:    hidden;
+-ms-backface-visibility:     hidden;
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);
+}

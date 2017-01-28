@@ -1,0 +1,9 @@
+mixin check-row()
+	//block check-row
+	.check-row
+		- for (var i = 0; i < 3; i++)
+			.check-row__el
+				.check-row__icon
+					+icon("check","icon")
+				.check-row__text Год основания нашей компании
+	//block check-row end

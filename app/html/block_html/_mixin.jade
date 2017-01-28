@@ -11,3 +11,7 @@ mixin linkmore(info)
 		.link-more__text=info
 		.link-more__icon
 			+icon("arrow-right","icon")
+
+mixin get-more(info)
+	.get-more
+		a(href="#").btn--light=info

@@ -10,11 +10,19 @@
 		"keys":"keys",
 		"vacany-el":"vacany-el",
 		"table-price":"table-price",
-		"contact":"contact"
+		"contact":"contact",
+		"personal-galary":"personal-galary",
+		"two-botton-block":"two-botton-block",
+		"news-list":"news-list",
+		"check-row":"check-row",
+		"slider-review":"slider-review"
 	},
 	"page":{
 		"vacany":"vacany",
 		"money":"money",
-		"contact":"contact"
+		"contact":"contact",
+		"personal":"personal",
+		"news":"news",
+		"single":"single"
 	}
 }

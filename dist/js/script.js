@@ -34,6 +34,8 @@ $(document).ready(function(){
 	}
 	hideToggle('.icon-bars','.top-menu_link');*/
 
+	//map
+
 	//====== sliders =====
 
 	//slider-clients
@@ -53,8 +55,6 @@ $(document).ready(function(){
 			 	items : 5
 		 	},
 	  },
-	 margin:true,
-	 autoHeight : true,
 	 dots: true,
 	 autoplay : false,
 	 singleItem:true,
@@ -71,14 +71,13 @@ $(document).ready(function(){
 
 	$(".slider-one-item").owlCarousel({
 	 items : 1,
-	 margin:true,
 	 autoHeight : true,
 	 dots: true,
 	 autoplay : false,
 	 singleItem:true,
-	 loop:true,
 	 fluidSpeed:1000,
 	 autoplayTimeout:4000,
+	 loop:true,
 	 navText:[
 			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
 			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'

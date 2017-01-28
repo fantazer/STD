@@ -1,0 +1,41 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+.wraper-general
+	+header()
+	.container-general
+			+bread()
+			.main-cont
+				.title-page Заголовок одной страницы
+				.container.container--content
+					.container__info.container__info--light
+						h1 Заголово H1 
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi temporibus ipsum, dolores quisquam rem nostrum, placeat aliquid sit fuga ut facilis repudiandae pariatur officiis minus quam excepturi rerum suscipit? Obcaecati corporis excepturi culpa quod enim temporibus totam tempore ab id.
+						+check-row()
+						h2 Заголово H2 
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut vero nemo totam explicabo consequatur temporibus! Eligendi quidem possimus minima ratione distinctio esse facilis cum sunt exercitationem accusantium, saepe est voluptas molestias ducimus expedita asperiores debitis fugiat earum ullam incidunt, veniam.
+						h3 Заголово H3 
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam earum, voluptate doloremque molestiae neque. Quia, soluta nesciunt ratione officia, architecto cumque blanditiis adipisci illum, iure porro consequatur voluptate inventore voluptatum quisquam vero nemo, culpa animi ea. Ab maxime illum nisi.
+						h4 Заголово H4 
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam qui doloribus quibusdam odio est ipsa repellat voluptatibus dolore voluptatum mollitia magni nemo at, commodi dolorum, asperiores, blanditiis ratione, facilis adipisci aliquid. Blanditiis omnis corporis debitis veniam enim iure quasi quae?
+						h5 Заголово H5 
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita et, adipisci explicabo necessitatibus delectus! Architecto aliquid voluptas, repellendus facere. Eum ipsa recusandae distinctio quod. Maiores asperiores, ipsam molestias, consectetur nihil neque. Ab eos amet cupiditate dolor magni, numquam vitae officia!
+						+slider-review()
+						.sliderok.owl-carousel
+							.sliderok-el.slider-1 
+								p 
+							.sliderok-el.slider-2 
+								p 
+							.sliderok-el.slider-3 
+								p 
+
+						h6 Заголово H6 
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut provident, vel dicta doloremque mollitia, facere voluptas ipsam esse sit, voluptatem inventore minima. Dolore cum modi soluta praesentium fuga, quis enim sunt quam. Assumenda quia rem, ipsa commodi! Commodi quaerat, dolores.
+					.container__toolbar
+						+reward()
+						+knowlage()
+						+keys()
+	+slider-clients()
+	+slider-pers()
+	+footer()
+include ./block_html/_script.jade

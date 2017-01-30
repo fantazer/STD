@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>Document</title>
+		<!--build:css css/vendor.css-->
+		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
+		<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="bower/flexbox-grid-stylus/dist/flexbox-grid.min.css" />
+		<link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css" />
+		<link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="bower/select2/dist/css/select2.min.css" />
+		<!--endbuild-->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
+	</head>
+	<!-- mixin nameMixin()-->
+	<!-- - var args = Array.prototype.slice.call(arguments)-->
+	<!-- - for item in args-->
+
+	<body>
+		<div class="wraper-general">
+			<!--block header-->
+			<div class="header">
+				<div class="main-cont">
+					<div class="header-wrp">
+						<a href="/" class="header-logo">
+							<img src="img/logo-light.png" alt="" />
+						</a>
+						<div class="header-cnt">
+							<div class="header-info">
+								<div class="header-slogan">
+									<span>Аутсорсинг и
+										<br> лизинг персонала</span>
+								</div>
+								<div class="header-time">
+									<div class="header-time__el">С 07:00 до 21:00 Пн - Пт</div>
+									<div class="header-time__el">С 01:00 до 08:00 Сб - Вс</div>
+								</div>
+								<a href="#" class="header-contact">
+									<div class="header-contact__phone">+7 495 401 73 78</div>
+									<div class="header-contact__mail">infostdgroup@strgroup.com</div>
+								</a>
+								<a href="#" class="header-call btn--light">Позвонить нам</a>
+							</div>
+							<div class="header-nav">
+								<a href="#" class="header-nav__el header-nav__el--active">О компании</a>
+								<a href="#" class="header-nav__el">Расчет </a>
+								<a href="#" class="header-nav__el">Прайс </a>
+								<a href="#" class="header-nav__el">Услуги </a>
+								<a href="#" class="header-nav__el">Новости </a>
+								<a href="#" class="header-nav__el">Отзывы </a>
+								<a href="#" class="header-nav__el">Персонал </a>
+								<a href="#" class="header-nav__el">Кейсы </a>
+								<a href="#" class="header-nav__el">Контакты </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--block header end-->
+			<div class="container-general">
+				<!--block bread-->
+				<div class="main-cont">
+					<div class="bread">
+						<a href="#" class="bread__el">Главная</a>
+						<a href="#" class="bread__el">Вакансии</a>
+						<a href="#" class="bread__el">Новая страница</a>
+					</div>
+				</div>
+				<!--block bread end-->
+				<div class="main-cont">
+					<div class="title-page">Калькулятор расчёта стоимости аутсорсинга персонала</div>
+					<div class="container">
+						<div class="calc-wraper">
+							<select>
+								<option value="1">Один</option>
+								<option value="2">Два</option>
+								<option value="3">Три</option>
+							</select>
+							<label class="style-label style-label--checkbox">
+								<input type="radio" name="group one" class="sytle-input" />
+								<div class="sytle-input-element">
+									<svg class="icon-check">
+										<use xlink:href="#checked"></use>
+									</svg>
+								</div>
+								<div class="sytle-input-text">Наименование услуги 1</div>
+							</label>
+							<label class="style-label style-label--checkbox">
+								<input type="radio" name="group one" class="sytle-input" />
+								<div class="sytle-input-element">
+									<svg class="icon-check">
+										<use xlink:href="#checked"></use>
+									</svg>
+								</div>
+								<div class="sytle-input-text">Наименование услуги 2</div>
+							</label>
+						</div>
+					</div>
+					<div class="get-more">
+						<a href="#" class="btn--light">Еще новости</a>
+					</div>
+					<!--block two-botton-block-->
+					<div class="two-botton-block">
+						<div class="two-botton-block__el">
+							<div class="two-botton-block__title">Поиск вакансий</div>
+							<div class="two-botton-block__btn">
+								<a href="#" class="btn">Найти вакансию</a>
+							</div>
+						</div>
+						<div class="two-botton-block__el">
+							<div class="two-botton-block__title">Поиск персонала</div>
+							<div class="two-botton-block__btn">
+								<a href="#" class="btn">Найти персонал</a>
+							</div>
+						</div>
+					</div>
+					<!--block two-botton-block end-->
+				</div>
+			</div>
+			<!--block footer-->
+			<div class="footer">
+				<div class="main-cont">
+					<div class="footer-wraper">
+						<div class="footer-nav">
+							<div class="footer-nav__col footer-nav__col--menu">
+								<a href="#" class="footer-nav__el">Расчет </a>
+								<a href="#" class="footer-nav__el">Прайс </a>
+								<a href="#" class="footer-nav__el">Услуги </a>
+								<a href="#" class="footer-nav__el">Новости </a>
+								<a href="#" class="footer-nav__el">Отзывы </a>
+								<a href="#" class="footer-nav__el">Персонал </a>
+								<a href="#" class="footer-nav__el">Кейсы </a>
+								<a href="#" class="footer-nav__el">Контакты </a>
+							</div>
+							<div class="footer-nav__col">
+								<div class="footer-nav__title">Услуги</div>
+								<a href="#" class="footer-nav__el">Аренда персонала </a>
+								<a href="#" class="footer-nav__el">Аутсорсинг персонала </a>
+								<a href="#" class="footer-nav__el">Аутстаффинг персонала </a>
+								<a href="#" class="footer-nav__el">Временный персонал </a>
+								<a href="#" class="footer-nav__el">Лизинг пересонала </a>
+								<a href="#" class="footer-nav__el">Подбор персонала </a>
+								<a href="#" class="footer-nav__el">Найм персонала </a>
+							</div>
+							<div class="footer-nav__col">
+								<div class="footer-nav__title">Кейсы</div>
+								<a href="#" class="footer-nav__el">Грузовой квадрат </a>
+								<a href="#" class="footer-nav__el">Красный мажор </a>
+								<a href="#" class="footer-nav__el">Известный кейс</a>
+								<a href="#" class="footer-nav__el">Грузчики в Мойшево</a>
+								<a href="#" class="footer-nav__el">Лучший переезды </a>
+								<a href="#" class="footer-nav__el">Азиатский экспресс</a>
+								<a href="#" class="footer-nav__el">Все кейсы</a>
+							</div>
+						</div>
+						<div class="footer-form">
+							<div class="footer-contact">
+								<div class="footer-contact__logo">
+									<img src="img/logo-dark.png" alt="" />
+								</div>
+								<div class="footer-contact__info">
+									<div class="footer-contact__phone">+7 495 401 73 78</div>
+									<div class="footer-contact__adr">ул. Варшавское шоссе д. 125</div>
+								</div>
+							</div>
+							<div class="footer-form__wrap">
+								<form action="" class="footer-form__el">
+									<input type="text" placeholder="Введите ваше имя" />
+									<input type="text" placeholder="Введите ваш номер телефона" />
+									<input type="submit" value="Отправить" class="btn" />
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="footer-copy">
+						<div class="footer-copy__text">© 2006 -2016 ООО «СервисСервис»</div>
+					</div>
+				</div>
+			</div>
+			<!--block footer end-->
+		</div>
+		<!--build:js js/combined.js-->
+		<script src="bower/jquery/dist/jquery.min.js"></script>
+		<script src="bower/owl.carousel/dist/owl.carousel.js"></script>
+		<script src="bower/svg4everybody/dist/svg4everybody.js"></script>
+		<script src="bower/select2/dist/js/select2.min.js"></script>
+		<script src="js/jquery.smoothscroll.js"></script>
+		<!-- endbuild-->
+		<script src="js/script.js"></script>
+		<script src="js/script-edit.js"></script>
+	</body>
+
+</html>

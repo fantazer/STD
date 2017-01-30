@@ -1,0 +1,29 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+.wraper-general
+	+header()
+	.container-general
+			+bread()
+			.main-cont
+				.title-page Калькулятор расчёта стоимости аутсорсинга персонала
+				.container
+						.calc-wraper
+							select
+								option(value="1") Один
+								option(value="2") Два
+								option(value="3") Три
+							label.style-label.style-label--checkbox
+								input(type="radio" name="group one").sytle-input
+								.sytle-input-element
+									+icon("checked","icon-check") 
+								.sytle-input-text Наименование услуги 1
+							label.style-label.style-label--checkbox
+								input(type="radio" name="group one").sytle-input
+								.sytle-input-element
+									+icon("checked","icon-check") 
+								.sytle-input-text Наименование услуги 2
+				+get-more('Еще новости')
+				+two-botton-block()
+	+footer()
+include ./block_html/_script.jade

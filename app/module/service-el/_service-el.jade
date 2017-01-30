@@ -1,0 +1,13 @@
+mixin service-el(val)
+	.service__el
+		.service__el-content
+			.service__el-header
+				.service__el-info
+					.service__el-type Разовые
+					a(href="#").service__el-name #{val.name} 
+				.service__el-icon
+					- var ico = val.icon;
+					svg(class="icon")
+						use(xlink:href="#"+ ico)
+		a(href="").service__el-get 
+			+linkmore("Подробнее")

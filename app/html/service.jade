@@ -1,0 +1,24 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+.wraper-general
+	+header()
+	.container-general
+			+bread()
+			.main-cont
+				.title-page Услуги
+				.container__service
+					.service__col
+						.service__title Разовые
+						.service__wraper
+							- each val in once
+								+service-el(val)
+					.service__col
+						.service__title Постоянные
+						.service__wraper
+							- each val in usualy
+								+service-el(val)
+				+two-botton-block()
+			+slider-clients()
+	+footer()
+include ./block_html/_script.jade

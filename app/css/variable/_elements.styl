@@ -110,3 +110,93 @@ table tbody tr:nth-child(odd) td, table tbody tr:nth-child(odd) th
 -moz-transform: translate3d(0,0,0);
 -ms-transform: translate3d(0,0,0);
 }
+
+/*select*/
+.select2-container
+	width 100%!important
+	.icon
+		size 15px
+.select2-selection__arrow
+	flex(mid)
+	tr(all)
+.select2-container--open
+	.select2-selection__arrow
+		transform rotate(180deg)
+.select2-results__option // style foк ellement
+	padding 10px 15px
+	border-bottom 1px solid #f5f4f4
+	&:last-child
+		border-bottom 0
+.select2-container--default .select2-selection--single
+	padding 10px 15px
+	height auto 
+.select2-container--default .select2-selection--single .select2-selection__arrow
+	position inherit
+	height auto
+	display inline-block
+	size 20px
+.select2-selection__rendered
+	padding 0!important
+	margin 0!important
+.select2-container--default .select2-selection--single
+	border 1px solid #999
+.select2-dropdown
+	border 1px solid #f5f4f4
+.select2-container--default .select2-results__option[aria-selected=true]
+	background #f5f4f4 
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+	background #e0e0e0
+	color black
+.select2-selection.select2-selection--single
+	display flex!important
+	flex(between)
+.select2-container *:focus
+	outline none
+	border-radius 3px
+	background-color #ffffff
+	box-shadow 0 0 10px 0 rgba(120, 94, 105, 0.5)
+	border solid 1px orange
+.select2-dropdown
+	border 1px solid #999
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+	background lightness(orange,90)
+	color orange
+/*select*/
+
+/*checkbox*/
+
+.style-label
+	display flex
+	position relative
+	align-items center
+	&:hover
+		cursor pointer
+.style-label--checkbox
+	input
+		position absolute
+		top 0
+		left -9999px
+	.sytle-input-element
+		width 20px
+		height 20px
+		position relative
+		display inline-block
+		background-size cover
+		margin-right 10px
+		background white
+		border 1px solid grey 
+		round()
+		cp()
+	.icon-check
+		display none
+	.sytle-input
+		&:checked + .sytle-input-element
+			flex(mid)
+			color white
+			.icon-check 
+				display block
+				fill red
+				width 10px
+				height 10px
+
+/*checkbox*/

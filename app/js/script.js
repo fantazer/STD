@@ -34,7 +34,13 @@ $(document).ready(function(){
 	}
 	hideToggle('.icon-bars','.top-menu_link');*/
 
-	//map
+	$("select").select2({
+		  minimumResultsForSearch: Infinity,
+		 
+		});
+		//add icon caret
+		$('b[role="presentation"]').hide();
+		$('.select2-selection__arrow').append('<svg class="icon"><use xlink:href="#arrow-down"></use></svg>');
 
 	//====== sliders =====
 

@@ -15,7 +15,9 @@
 		"two-botton-block":"two-botton-block",
 		"news-list":"news-list",
 		"check-row":"check-row",
-		"slider-review":"slider-review"
+		"slider-review":"slider-review",
+		"news-el":"news-el",
+		"service-el":"service-el"
 	},
 	"page":{
 		"vacany":"vacany",
@@ -23,6 +25,9 @@
 		"contact":"contact",
 		"personal":"personal",
 		"news":"news",
-		"single":"single"
+		"single":"single",
+		"news":"news",
+		"service":"service",
+		"calc":"calc"
 	}
 }

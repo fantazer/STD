@@ -1,0 +1,17 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+.wraper-general
+	+header()
+	.container-general
+			+bread()
+			.main-cont
+				.title-page Новости
+				.container.container--content
+						.container__news
+							- for (var i = 0; i < 8; i++)
+								+news-el()
+				+get-more('Еще новости')
+				+two-botton-block()
+	+footer()
+include ./block_html/_script.jade

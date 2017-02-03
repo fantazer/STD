@@ -1,0 +1,62 @@
+mixin calc()
+	//block calc
+	.calc-wraper
+		.calc__row
+			.calc__type Специальность
+			.calc__value
+				select
+					option(value="1") Один
+					option(value="2") Два
+					option(value="3") Три
+		.calc__row
+			.calc__type Количество персонала
+			.calc__value
+				select
+					option(value="1") Один
+					option(value="2") Два
+					option(value="3") Три
+		.calc__row
+			.calc__type Пол
+			.calc__value
+				+radio("Мужской","Sex")
+				+radio("Женский","Sex")
+				+radio("Не имеет значения","Sex")
+		.calc__row
+			.calc__type Количество часов в смену
+			.calc__value
+				select
+					option(value="1") Один
+					option(value="2") Два
+					option(value="3") Три
+		.calc__row
+			.calc__type Количество рабочих дней в неделю
+			.calc__value
+				select
+					option(value="1") Один
+					option(value="2") Два
+					option(value="3") Три
+		.calc__row
+			.calc__type Общежитие предоставляется
+			.calc__value
+				+radio("Исполнитель","Home")
+				+radio("Заказчик","Home")
+		.calc__row
+			.calc__type Трансфер до объекта предоставляется
+			.calc__value
+				+radio("Исполнитель","travel")
+				+radio("Заказчик","travel")
+				+radio("Не требуется","travel")
+		.calc__row
+			.calc__type Территория
+			.calc__value
+				+radio("Москва","position")
+				+radio("Московская область","position")
+		.calc__row
+			.calc__type Мед.книжки работникам
+			.calc__value
+				+radio("Да","helf")
+				+radio("Нет","helf")
+	.calc-get
+		.calc-get__el Рассчитать
+			
+	//block calc end

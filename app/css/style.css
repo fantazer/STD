@@ -59,7 +59,8 @@ h6 {
 .btn--lg,
 .btn--mobile,
 .btn--light,
-.btn--green-light {
+.btn--green-light,
+.calc-get__el {
   transition: all 0.4s;
   box-shadow: inset 0 0 0 rgba(243,128,12,0.33);
   border-radius: 2px;
@@ -79,7 +80,8 @@ h6 {
 .btn--lg:hover,
 .btn--mobile:hover,
 .btn--light:hover,
-.btn--green-light:hover {
+.btn--green-light:hover,
+.calc-get__el:hover {
   cursor: pointer;
   background-image: linear-gradient(30deg, #f3800c 0%, #ea3d03 80%);
   color: #fff;
@@ -401,6 +403,7 @@ body > svg {
 }
 .box,
 .container__info--light,
+.container--calc,
 .contact,
 .keys,
 .knowlage,
@@ -469,6 +472,8 @@ table tbody tr:nth-child(odd) th {
 .select2-container--default .select2-selection--single {
   padding: 10px 15px;
   height: auto;
+  background: #ededf2;
+  border: 1px solid #e9e7e7;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   position: inherit;
@@ -480,9 +485,6 @@ table tbody tr:nth-child(odd) th {
 .select2-selection__rendered {
   padding: 0 !important;
   margin: 0 !important;
-}
-.select2-container--default .select2-selection--single {
-  border: 1px solid #999;
 }
 .select2-dropdown {
   border: 1px solid #f5f4f4;
@@ -534,8 +536,8 @@ table tbody tr:nth-child(odd) th {
   display: inline-block;
   background-size: cover;
   margin-right: 10px;
-  background: #fff;
-  border: 1px solid #808080;
+  background: #ededf2;
+  border: 1px solid #d1d1d2;
   border-radius: 50%;
 }
 .style-label--checkbox .sytle-input-element:hover {
@@ -1277,6 +1279,35 @@ body {
   content: ' >';
   margin-left: 5px;
   color: #282e3b;
+}
+.container--calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px;
+  flex-flow: column;
+}
+.calc-wraper {
+  width: 75%;
+}
+.calc__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.calc__type {
+  width: 30%;
+}
+.calc__value {
+  display: flex;
+  width: 67%;
+}
+.style-label {
+  width: 33%;
+}
+.calc-get {
+  margin-top: 30px;
 }
 .check-row {
   margin: 40px 0;

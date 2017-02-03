@@ -17,7 +17,8 @@
 		"check-row":"check-row",
 		"slider-review":"slider-review",
 		"news-el":"news-el",
-		"service-el":"service-el"
+		"service-el":"service-el",
+		"calc":"calc"
 	},
 	"page":{
 		"vacany":"vacany",

@@ -15,3 +15,10 @@ mixin linkmore(info)
 mixin get-more(info)
 	.get-more
 		a(href="#").btn--light=info
+
+mixin radio(info,group)
+	label.style-label.style-label--checkbox
+		input(type="radio" name=group).sytle-input
+		.sytle-input-element
+			+icon("checked","icon-check") 
+		.sytle-input-text=info

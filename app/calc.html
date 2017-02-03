@@ -75,54 +75,274 @@
 				<!--block bread end-->
 				<div class="main-cont">
 					<div class="title-page">Калькулятор расчёта стоимости аутсорсинга персонала</div>
-					<div class="container">
+					<div class="container container--calc">
+						<!--block calc-->
 						<div class="calc-wraper">
-							<select>
-								<option value="1">Один</option>
-								<option value="2">Два</option>
-								<option value="3">Три</option>
-							</select>
-							<label class="style-label style-label--checkbox">
-								<input type="radio" name="group one" class="sytle-input" />
-								<div class="sytle-input-element">
-									<svg class="icon-check">
-										<use xlink:href="#checked"></use>
-									</svg>
+							<div class="calc__row">
+								<div class="calc__type">Специальность</div>
+								<div class="calc__value">
+									<select>
+										<option value="1">Один</option>
+										<option value="2">Два</option>
+										<option value="3">Три</option>
+									</select>
 								</div>
-								<div class="sytle-input-text">Наименование услуги 1</div>
-							</label>
-							<label class="style-label style-label--checkbox">
-								<input type="radio" name="group one" class="sytle-input" />
-								<div class="sytle-input-element">
-									<svg class="icon-check">
-										<use xlink:href="#checked"></use>
-									</svg>
+							</div>
+							<div class="calc__row">
+								<div class="calc__type">Количество персонала</div>
+								<div class="calc__value">
+									<select>
+										<option value="1">Один</option>
+										<option value="2">Два</option>
+										<option value="3">Три</option>
+									</select>
 								</div>
-								<div class="sytle-input-text">Наименование услуги 2</div>
-							</label>
-						</div>
-					</div>
-					<div class="get-more">
-						<a href="#" class="btn--light">Еще новости</a>
-					</div>
-					<!--block two-botton-block-->
-					<div class="two-botton-block">
-						<div class="two-botton-block__el">
-							<div class="two-botton-block__title">Поиск вакансий</div>
-							<div class="two-botton-block__btn">
-								<a href="#" class="btn">Найти вакансию</a>
+							</div>
+							<div class="calc__row">
+								<div class="calc__type">Пол</div>
+								<div class="calc__value">
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="Sex" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Мужской</div>
+									</label>
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="Sex" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Женский</div>
+									</label>
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="Sex" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Не имеет значения</div>
+									</label>
+								</div>
+							</div>
+							<div class="calc__row">
+								<div class="calc__type">Количество часов в смену</div>
+								<div class="calc__value">
+									<select>
+										<option value="1">Один</option>
+										<option value="2">Два</option>
+										<option value="3">Три</option>
+									</select>
+								</div>
+							</div>
+							<div class="calc__row">
+								<div class="calc__type">Количество рабочих дней в неделю</div>
+								<div class="calc__value">
+									<select>
+										<option value="1">Один</option>
+										<option value="2">Два</option>
+										<option value="3">Три</option>
+									</select>
+								</div>
+							</div>
+							<div class="calc__row">
+								<div class="calc__type">Общежитие предоставляется</div>
+								<div class="calc__value">
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="Home" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Исполнитель</div>
+									</label>
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="Home" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Заказчик</div>
+									</label>
+								</div>
+							</div>
+							<div class="calc__row">
+								<div class="calc__type">Трансфер до объекта предоставляется</div>
+								<div class="calc__value">
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="travel" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Исполнитель</div>
+									</label>
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="travel" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Заказчик</div>
+									</label>
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="travel" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Не требуется</div>
+									</label>
+								</div>
+							</div>
+							<div class="calc__row">
+								<div class="calc__type">Территория</div>
+								<div class="calc__value">
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="position" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Москва</div>
+									</label>
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="position" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Московская область</div>
+									</label>
+								</div>
+							</div>
+							<div class="calc__row">
+								<div class="calc__type">Мед.книжки работникам</div>
+								<div class="calc__value">
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="helf" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Да</div>
+									</label>
+									<label class="style-label style-label--checkbox">
+										<input type="radio" name="helf" class="sytle-input" />
+										<div class="sytle-input-element">
+											<svg class="icon-check">
+												<use xlink:href="#checked"></use>
+											</svg>
+										</div>
+										<div class="sytle-input-text">Нет</div>
+									</label>
+								</div>
 							</div>
 						</div>
-						<div class="two-botton-block__el">
-							<div class="two-botton-block__title">Поиск персонала</div>
-							<div class="two-botton-block__btn">
-								<a href="#" class="btn">Найти персонал</a>
-							</div>
+						<div class="calc-get">
+							<div class="calc-get__el">Рассчитать</div>
 						</div>
+						<!--block calc end-->
 					</div>
-					<!--block two-botton-block end-->
 				</div>
 			</div>
+			<!--block slider-pers-->
+			<div class="main-cont">
+				<div class="slider-items slider-items-pers">
+					<div class="slider-items-title">Наш персонал</div>
+					<div class="slider-items__wraper owl-carousel">
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-1.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-2.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-3.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-4.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-5.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-1.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-2.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-3.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-4.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-5.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-1.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-2.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-3.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-4.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+						<a href="#" class="slider-items-pers__el">
+							<div style="background-image:url('img/personal-5.png')" class="slider-items-pers__img"></div>
+							<div class="slider-items-pers__title">Грузчики</div>
+							<div class="slider-items-pers__pay">от 110 Р</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--block slider-pers end-->
 			<!--block footer-->
 			<div class="footer">
 				<div class="main-cont">

@@ -14,6 +14,9 @@
 	text-align center
 .slider-items__wraper
 	flex(around)
+	+below(768px)
+		.slider-control
+			display none!important
 .slider-items__el
 	size 120px
 	bg-full()

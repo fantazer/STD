@@ -7,6 +7,8 @@ mixin header()
 					img(src="img/logo-light.png", alt="")
 				.header-cnt
 					.header-info
+						a(href="/").header-logo--small
+							img(src="img/logo-light.png", alt="")
 						.header-slogan
 							span Аутсорсинг и <br> лизинг персонала
 						.header-time
@@ -16,8 +18,50 @@ mixin header()
 							.header-contact__phone +7 495 401 73 78
 							.header-contact__mail infostdgroup@strgroup.com
 						a(href="#").header-call.btn--light Позвонить нам
-					.header-nav
-						a(href="#").header-nav__el.header-nav__el--active О компании
-						- each val in top_nav
-							a(href="#").header-nav__el #{val.el}
+						.header-nav__toggle
+							.header-nav__toggle-el
+								+icon("menu","icon")
+					.header-nav__wraper
+						.header-nav
+							.header-nav__el.header-nav__el--active 
+								a(href="#") О компании
+							.header-nav__el 
+								a(href="#") Расчет
+							.header-nav__el 
+								a(href="#") Прайс
+							.header-nav__el.header-nav__el-level.header-nav__el-service
+								a(href="#") Услуги
+								+icon("arrow-down","icon")
+								.header-nav__el-sub
+									.header-nav__el-sub-col
+										.header-nav__el-sub-title Разовые
+										.header-nav__el-sub-el 
+											a(href="#") Аренда персонала
+										.header-nav__el-sub-el 
+											a(href="#") Аутсорсинг персонала
+										.header-nav__el-sub-el 
+											a(href="#") Аутстафинг персонала
+										.header-nav__el-sub-el 
+											a(href="#") Подготовка выставок,банкетов, презентаций концертов
+									.header-nav__el-sub-col
+										.header-nav__el-sub-title Постоянные
+										.header-nav__el-sub-el
+											a(href="#") Лизинг персонала
+										.header-nav__el-sub-el
+											a(href="#") Сезонные работы
+										.header-nav__el-sub-el
+											a(href="#") Аутстафинг персонала
+										.header-nav__el-sub-el
+											a(href="#") Разгрузочные работы, подсобные работы
+							.header-nav__el 
+								a(href="#") Новости
+							.header-nav__el 
+								a(href="#") Отзывы
+							.header-nav__el 
+								a(href="#") Персонал
+							.header-nav__el 
+								a(href="#") Кейсы
+							.header-nav__el 
+								a(href="#") Контакты
+						
 	//block header end

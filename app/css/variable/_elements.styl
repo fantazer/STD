@@ -200,3 +200,61 @@ table tbody tr:nth-child(odd) td, table tbody tr:nth-child(odd) th
 				height 10px
 
 /*checkbox*/
+
+.container-review-news
+	+below(1024px)
+		fw()
+	flex(between)
+	align-items flex-start
+	.container__news
+		+below(640px)
+			fw()
+		flex-wrap nowrap
+	.news-el
+		+below(1024px)
+			height initial
+		width 100%
+		box-shadow none
+		border-radius 0
+		border-right 1px solid #D5D7D8 
+		&:last-child
+			border 0
+	.slider-review
+		+below(1024px)
+			height initial
+		height 400px
+		margin 0
+.container-review-news__el-review
+	+below(1024px)
+		width 100%
+	width 22%
+	bsh()
+.container-review-news__el-news
+	+below(1024px)
+		width 100%
+		margin-top 15px
+	width 77%
+.container-map
+	flex(between)
+	align-items stretch
+	margin-bottom 20px
+.container-map__el
+	+below(768px)
+		display none
+	width 73%
+	bgi("map.png")
+	background-size contain
+	background-position center center
+.container-map__rewards
+	+below(768px)
+		width 100%
+	width 26%
+.container-map__title
+	color #333333
+	font-size 24px
+	font-weight 700
+	width 350px
+.more-text
+	@extend .box
+	padding 20px
+	margin-bottom 15px

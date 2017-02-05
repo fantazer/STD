@@ -18,7 +18,11 @@
 		"slider-review":"slider-review",
 		"news-el":"news-el",
 		"service-el":"service-el",
-		"calc":"calc"
+		"calc":"calc",
+		"baner":"baner",
+		"numbers":"numbers",
+		"skils":"skils",
+		"advant":"advant"
 	},
 	"page":{
 		"vacany":"vacany",

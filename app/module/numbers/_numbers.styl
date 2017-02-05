@@ -1,0 +1,38 @@
+.numbers
+	+below(768px)
+		fw()
+		padding 10px
+		margin-top 40px
+	flex(between)
+	@extend .box
+	padding 40px
+	margin-top 5%
+	align-items stretch
+	margin-bottom 15px
+.numbers__el
+	+below(768px)
+		width 50%
+		height 130px
+		justify-content center
+	width 100%
+	flex(mid)
+	fl()
+	justify-content flex-start
+.numbers__val
+	+below(1024px)
+		font-size 32px
+	color #17688e
+	font-size 44px
+	font-weight 700
+	margin-bottom 10px
+.numbers__text
+	+below(1024px)
+		font-size 16px
+	+below(768px)
+		font-size 12px
+	color #282e3b
+	font-family Lato
+	font-size 20px
+	font-weight 300
+	text-align center
+	width 80%

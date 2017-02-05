@@ -6,9 +6,15 @@
 	font-family Lato
 	margin-top 30px
 .footer-wraper
+	+below(768px)
+		fw()
 	flex(between)
 	align-items flex-start
 .footer-nav 
+	+below(768px)
+		width 100%
+		margin-right 0
+		margin-bottom 20px
 	flex(between)
 	align-items flex-start
 	margin-right 30px
@@ -26,7 +32,18 @@
 	&:hover
 		color orange
 .footer-nav__col--menu 
+	+below(1024px)
+		flex(mid)
+		fl()
+	+below(768px)
+		width 100%
+		flex-flow row
+		fw()
 	.footer-nav__el 
+		+below(768px)
+			width 25%
+			font-size 12px
+			text-align center
 		color white
 		font-family Lato
 		font-size 16px
@@ -41,6 +58,10 @@
 	font-weight 700
 	margin-bottom 10px
 .footer-form 
+	+below(1024px)
+		width 60%
+	+below(768px)
+		width 100%
 	width 35%
 .footer-contact 
 	margin-bottom 20px
@@ -49,6 +70,8 @@
 	margin-right 20px
 //.footer-contact__info 
 .footer-contact__phone
+	+below(1024px)
+		font-size 22px
 	color #ffffff
 	font-family Lato
 	font-size 32px
@@ -57,6 +80,8 @@
 	text-align right
 	margin-bottom 10px
 .footer-contact__adr 
+	+below(1024px)
+		font-size 14px
 	color #ffffff
 	font-family Lato
 	font-size 16px
@@ -75,5 +100,10 @@
 	color #a6a7a9
 	text-align center
 	font-size 14px
-
+.footer-nav__col-service
+	+below(768px)
+		display none
+.footer-nav__col-keys
+	+below(1024px)
+		display none
 /*!block footer end */

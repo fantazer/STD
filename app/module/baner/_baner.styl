@@ -1,0 +1,115 @@
+.baner
+	position relative
+.baner__filter
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	background rgba(40, 46, 59, 0.56)
+	z-index 2
+.baner__el 
+	height 100vh
+	padding-top 8%
+	bg-full()
+	flex(mid)
+.baner__content
+	flex(mid)
+	fl()
+.main-cont--baner
+	z-index 11
+.baner__title
+	+below(1200px)
+		font-size 32px 
+		width 80%
+	+below(840px)
+		font-size 24px
+		line-height initial 
+		margin-bottom 5%	
+		width 90%	
+	color #ffffff
+	font-family Lato
+	font-size 48px
+	font-weight 300
+	text-align center
+	line-height 50px
+.baner__form
+	margin 3% 0
+	flex(mid)
+.baner__form-el
+	+below(840px)
+		fw()
+	flex(mid)
+.baner__form-phone
+	+below(840px)
+		width 100%	
+		margin-right 0	
+	width 300px
+	margin-right 20px
+.baner__form-get	
+	+below(840px)
+		width 100%	
+	padding 10px 20px
+	font-weight normal 
+.baner__text
+	+below(1200px)
+		font-size 14px
+		line-height 20px 
+	+below(840px)
+			display none
+	color white
+	text-align center
+	font-family Lato
+	font-size 18px
+	line-height 32px
+	width 60%
+
+//style for header main page
+.baner
+	width 100%
+	.header
+		position absolute
+		top 0
+		left 0
+		z-index 10
+		width 100%
+		background none 
+		box-shadow none
+	.header-logo
+		+below(1200px)
+			img
+				width 70px
+			transform translateY(34px)
+		background white
+		padding 20px
+		transform translateY(10px)
+		bsh()	
+		width auto
+	.header-nav
+		+below(840px)
+			padding-left 0
+		background white
+		padding-left 20px 
+	.header-info
+		+below(840px)
+			padding 10px
+		+below(640px)
+			padding 0 5px
+		padding-left 20px
+		margin-bottom 20px
+	.header-slogan,
+	.header-time__el,
+	.header-contact__phone,
+	.header-contact__mail,
+	.header-call
+		color white
+	.owl-dots
+		+below(640px)
+			margin-top -8%
+		margin-top -3%
+	.header-nav__toggle-el
+		cp()
+		.icon
+			fill white
+	//.header-logo--small
+		

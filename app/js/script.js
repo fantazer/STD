@@ -20,7 +20,7 @@ $(document).ready(function(){
 	svg4everybody();
 	
 	/* ###### For SlideToggle Elements  ######*/
-	/*var hideToggle = function(targetClick,toggleEl) {
+	var hideToggle = function(targetClick,toggleEl) {
 		$(targetClick).click(function(event){
 				event.stopPropagation();
 				$(toggleEl).slideToggle("fast");
@@ -32,7 +32,7 @@ $(document).ready(function(){
 				$(toggleEl).hide();
 		});
 	}
-	hideToggle('.icon-bars','.top-menu_link');*/
+	hideToggle('.header-nav__toggle-el','.header-nav__wraper');
 
 	$("select").select2({
 		  minimumResultsForSearch: Infinity,
@@ -49,7 +49,7 @@ $(document).ready(function(){
 	 items : 5,
 	responsive : {
 	 		0:{
-			 	items : 4
+			 	items : 2
 		 	},
 		 	768:{
 			 	items : 3
@@ -90,6 +90,7 @@ $(document).ready(function(){
 	 	]
 	 }
 	);
+	//slider review
 	$(".slider-review-wraper").owlCarousel({
 		items:1,
 		 dots: true,
@@ -102,6 +103,15 @@ $(document).ready(function(){
 	 }
 	);
 
+	//slider baner
+	$(".slider-baner").owlCarousel({
+		items:1,
+		 autoplay : false,
+		 singleItem:true,
+		 fluidSpeed:1000,
+		 rewindNav: false
+	 }
+	);
 	//====== sliders =====
 
 })

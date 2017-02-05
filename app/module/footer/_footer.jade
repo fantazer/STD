@@ -7,11 +7,11 @@ mixin footer()
 					.footer-nav__col.footer-nav__col--menu
 						- each val in top_nav
 							a(href="#").footer-nav__el #{val.el}
-					.footer-nav__col
+					.footer-nav__col.footer-nav__col-service
 						.footer-nav__title Услуги
 						- each val in service
 							a(href="#").footer-nav__el #{val.el}
-					.footer-nav__col
+					.footer-nav__col.footer-nav__col-keys
 						.footer-nav__title Кейсы
 						- each val in keys
 							a(href="#").footer-nav__el #{val.el}

@@ -1,12 +1,23 @@
 .two-botton-block
+	+below(1024px)
+		padding 20px
+	+below(768px)
+		fw()
 	flex(around)
 	@extend .box
 	padding 30px
 .two-botton-block__el
+	+below(768px)
+		width 100%
+		margin-bottom 10px
 	width 50%
 	flex(mid)
 	fl()
 .two-botton-block__title
+	+below(1024px)
+		font-size 18px
+	+below(768px)
+		font-size 14px
 	color #282e3b
 	font-family Lato
 	font-size 24px

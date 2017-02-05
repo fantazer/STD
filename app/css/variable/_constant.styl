@@ -32,7 +32,7 @@ $link-color-hover = black
 
 
 OpenSans =  'Open Sans', sans-serif;
-Lato =  'Lato', sans-serif;
+Lato =  'Open Sans', sans-serif;
 $v-font =  Arial
 
 $weigh-light = 300
@@ -54,7 +54,7 @@ typeSize(fontSm,font)
 	typeSize(16,14)
 
 .type--lg
-	typeSize(20,16)
+	typeSize(24,16)
 
 .type--xl
 	typeSize(28,18)
@@ -137,6 +137,10 @@ btnStyleLight(br-btn,color-btn)
 button
 	font-family $v-font
 
+.btn
+	+below(1024px)
+		padding 10px 20px
+		font-size 14px
 // ============================ Inputs ============================
 
 input,textarea,select
@@ -154,3 +158,5 @@ input,textarea,select
 	focus(orange)
 	placeholder(#202a39)
 
+input:focus,textarea:focus,select:focus
+	border 1px solid orange

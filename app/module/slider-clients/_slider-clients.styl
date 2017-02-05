@@ -1,7 +1,7 @@
 .slider-items
 	bsh()
 	br(3px)
-	margin-bottom 30px
+	margin-bottom 15px
 	padding 20px
 	background white
 	.owl-item
@@ -13,6 +13,9 @@
 	font-weight 700
 	text-align center
 .slider-items__wraper
+	+below(768px)
+		.owl-nav
+			display none
 	flex(around)
 .slider-items__el
 	size 120px

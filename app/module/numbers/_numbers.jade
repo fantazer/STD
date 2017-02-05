@@ -1,0 +1,8 @@
+mixin numbers()
+	//block numbers
+	.numbers
+		- each val in numbers 
+			.numbers__el
+				.numbers__val #{val.value}
+				.numbers__text #{val.text}
+	//block numbers end

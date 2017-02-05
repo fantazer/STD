@@ -1,5 +1,9 @@
 /*! block header*/
 .header 
+	+below(840px)
+		padding-top 5px
+		.main-cont
+			padding 0
 	background white 
 	padding-top 20px
 	bsh()
@@ -10,17 +14,33 @@
 	align-items flex-start
 .header-logo 
 	width 120px
+	+below(1200px)
+		img
+			width 120px
+	+below(840px)
+		display none
 .header-cnt 
+	+below(1200px)
+		width calc(97% - 70px) 
+		padding-left 10px
+	+below(840px)
+		width 100%
+		padding-left 0
+	+below(640px)
+		padding-left 0
 	flex(between)
 	fl()
 	align-items flex-start
 	width calc(97% - 120px) 
 .header-info 
+	+below(840px)
+		align-items center
 	flex(between)
 	align-items flex-start
 	width 100%
-	margin-bottom 25px
 .header-slogan 
+	+below(1200px)
+		display none
 	width 30%
 	color #282e3b
 	font-family Lato
@@ -28,28 +48,43 @@
 	font-weight 400
 	line-height 24px
 .header-time 
+	+below(840px)
+		display none
 	width 25%
 .header-time__el 
+	+below(1024px)
+		font-size 13px
 	color #282e3b
 	font-family Lato
 	font-size 15px
 	font-weight 400
 	line-height 24px
 .header-contact 
+	+below(1200px)
+		width 30%
+		text-align center
+	+below(840px)
+		width 100%
 	width 25%
 .header-contact__phone 
+	+below(1200px)
+		font-size 20px
 	color #282e3b
 	font-family Lato
 	font-size 26px
 	font-weight 700
 	line-height 24px
 .header-contact__mail 
+	+below(1200px)
+		font-size 12px
 	color #282e3b
 	font-family Lato
 	font-size 15px
 	font-weight 400
 	line-height 24px
 .header-call 
+	+below(840px)
+		display none
 	padding 10px 30px
 	background none
 	color black
@@ -57,10 +92,26 @@
 	border-radius 2px
 	border 2px solid #ea3d03
 .header-nav 
+	+below(840px)
+		flex-wrap wrap
 	width 100%
 	flex(between)
+	a
+		color black
+		tr(all)
+		&:hover
+			color orange
 .header-nav__el 
-	padding-bottom 25px
+	+below(1200px)
+		font-size 14px
+	+below(1024px)
+		font-size 12px
+	+below(840px)
+		width 100%
+		padding 10px 0!important
+		font-size 14px
+		border-bottom 1px solid #f6f6f6!important
+	padding 25px 0
 	display inline-block
 	font-family Lato
 	font-size 16px
@@ -71,9 +122,83 @@
 	&:hover
 		border-bottom 3px solid orange
 		padding-bottom 22px
+		& > a
+			color orange
+		.icon
+			fill orange
 .header-nav__el--active
 	color orange
 	padding-bottom 22px
 	border-bottom 3px solid orange
+.header-nav__el-level
+	position relative
+	.icon
+		tr(all)
+		size 10px
+		display inline-block
+.header-nav__el-sub
+	+below(840px)
+		flex(between)
+		position initial
+		box-shadow none
+		align-items flex-start
+		display none
+	bsh()
+	position absolute
+	top calc(100%)
+	left -100%
+	background white 
+	align-items flex-start
+	display none
+	z-index 10
+.header-nav__el-service
+	+below(840px)
+		.icon
+			display none
+		&:hover
+			.header-nav__el-sub
+				display none!important
+	&:hover
+		.header-nav__el-sub
+			flex(between)
+			align-items flex-start
+.header-nav__el-sub-col
+	width 48%
+	text-align left
+	padding 15px
+	width 230px
+.header-nav__el-sub-title
+	+below(840px)
+		text-align center
+	color #999999
+	text-transform uppercase
+	margin-bottom 10px
+.header-nav__el-sub-el
+	+below(1024px)
+		font-size 12px
+	+below(840px)
+		text-align center
+	font-size 14px
+	margin-bottom 10px
+	display block
+.header-logo--small
+	display none
+	+below(840px)
+		display block
+		img
+			width 60px
+.header-nav__wraper
+	+above(840px)
+		display block!important
+	+below(840px)
+		display none
+	width 100%
+	position relative
+.header-nav__toggle
+	display none
+	+below(840px)
+		display inline-block
+		.icon
+			size 20px
 	
 /*!block header end */

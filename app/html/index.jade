@@ -2,20 +2,34 @@ include block_html/_style.jade
 include ../module/**/*.jade
 
 .wraper-general
-	+header()
+	+baner()
 	.container-general
-			+bread()
-			.main-cont
-				.title-page Вакансии
-				.container.container--content
-					.container__info
-						- for (var i = 0; i < 5; i++)
-							+vacany-el()
-					.container__toolbar
-						+reward()
-						+knowlage()
-						+keys()
-	+slider-clients()
-	+slider-pers()
+		.main-cont
+			+numbers()
+			//container-review
+			.container-review-news
+				.container-review-news__el-review
+					+slider-review()
+				.container-review-news__el-news
+					.container__news
+						- for (var i = 0; i < 3; i++)
+							+news-el()
+			+two-botton-block()
+			//container-map
+			.container-map
+				.container-map__el
+					.container-map__title Мы работаем с клиентами по всей России
+				.container-map__rewards
+					+reward()
+		+slider-clients()
+		.main-cont
+			+advant()
+		+slider-pers()
+		.main-cont
+			.more-text
+				.type--lg.type--center.type--bold Подробнее о STD Group
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ratione illum qui numquam reprehenderit praesentium cum, voluptatem ipsa laborum, mollitia beatae tempore temporibus sed. Nemo eligendi natus quia ratione alias, sunt officia, harum, laboriosam est assumenda, laborum libero neque accusamus?
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ratione illum qui numquam reprehenderit praesentium cum, voluptatem ipsa
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ratione illum qui numquam reprehenderit praesentium cum, voluptatem ipsa laborum, mollitia beatae tempore temporibus sed. Nemo eligendi natus quia ratione alias, sunt officia, harum, laboriosam est assumenda, laborum libero neque accusamus?Nemo eligendi natus quia ratione alias, sunt officia, harum, laboriosam est assumenda, laborum libero neque accusamus?
 	+footer()
 include ./block_html/_script.jade

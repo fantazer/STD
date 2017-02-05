@@ -1,0 +1,9 @@
+mixin slider-docs()
+	//block slider-docs
+	.slider-items.slider-items-docs
+			.slider-items-title Наши клиенты
+			.slider-items__wraper.owl-carousel
+				- for (var j = 0; j< 3; j++)
+					- for (var i = 0; i < 4; i++)
+						a(href="img/review-#{i+1}.jpg" rel="group-elemen" style="background-image:url('img/review-#{i+1}.jpg')").fancybox.slider-items__el
+	//block slider-docs end

@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+	//Init fancybox
+	$(".fancybox").fancybox();
+	//Style scroll
+	$(".review-block__text").mCustomScrollbar({
+	  autoDraggerLength: false // size druger
+	});
 	/* ###### For only ies  ######*/
 	//if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
 	//	//code
@@ -34,13 +40,14 @@ $(document).ready(function(){
 	}
 	hideToggle('.header-nav__toggle-el','.header-nav__wraper');
 
+	//style select
 	$("select").select2({
 		  minimumResultsForSearch: Infinity,
-		 
-		});
-		//add icon caret
-		$('b[role="presentation"]').hide();
-		$('.select2-selection__arrow').append('<svg class="icon"><use xlink:href="#arrow-down"></use></svg>');
+	});
+
+	//add icon caret
+	$('b[role="presentation"]').hide();
+	$('.select2-selection__arrow').append('<svg class="icon"><use xlink:href="#arrow-down"></use></svg>');
 
 	//====== sliders =====
 

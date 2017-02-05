@@ -1,0 +1,27 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+.wraper-general
+	+header()
+	.container-general
+			+bread()
+			.main-cont
+				.title-page Отзывы
+				.container.container--content
+					.container__info
+						+slider-docs()
+						.review__container
+							- for (var i = 0; i < 4; i++)
+								+review-block()
+						+get-more('Еще отзывы')
+					.container__toolbar
+						.send-review
+							.send-review__title Оставьте отзыв
+							+get-more('Написать отзыв')
+						+reward()
+						+knowlage()
+						+keys()
+	+slider-clients()
+	+slider-pers()
+	+footer()
+include ./block_html/_script.jade

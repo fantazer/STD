@@ -22,7 +22,10 @@
 		"baner":"baner",
 		"numbers":"numbers",
 		"skils":"skils",
-		"advant":"advant"
+		"advant":"advant",
+		"advant":"advant",
+		"slider-docs":"slider-docs",
+		"review-block":"review-block"
 	},
 	"page":{
 		"vacany":"vacany",
@@ -33,6 +36,7 @@
 		"single":"single",
 		"news":"news",
 		"service":"service",
-		"calc":"calc"
+		"calc":"calc",
+		"review":"review"
 	}
 }

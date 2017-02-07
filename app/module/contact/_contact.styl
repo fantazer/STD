@@ -1,21 +1,36 @@
 .contact
+	+below(768px)
+		padding 20px 0
 	@extend .box
 	padding 50px 0
 	flex(mid)
 	margin-bottom 40px
 .contact__wraper
+	+below(1024px)
+		width 90%
+	+below(768px)
+		fw()
 	width 80%
 	flex(between)
 	align-items flex-start
 .contact__info
+	+below(768px)
+		width 100%
+		margin-bottom 10px
 	width 40%
 	color #333333
 	font-family Lato
 	font-weight 400
 .contact__phone
+	+below(768px)
+		font-size 24px
 	font-size 32px
 //.contact__text
 .contact__form
+	+below(768px)
+		width 100%
+		.btn--light
+			width 100%
 	width 40%
 	input[type="text"],textarea
 		background #eeeef3

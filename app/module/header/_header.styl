@@ -10,6 +10,8 @@
 	margin-bottom 20px
 //.main-cont 
 .header-wrp 
+	+below(768px)
+		padding 0 5px
 	flex(between)
 	align-items flex-start
 .header-logo 
@@ -200,5 +202,6 @@
 		display inline-block
 		.icon
 			size 20px
-	
+.header-logo--dark
+	display none
 /*!block header end */

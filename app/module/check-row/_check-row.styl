@@ -1,16 +1,28 @@
-.check-row 
+.check-row
+	+below(768px)
+		margin 20px 0
+		fw() 
 	margin 40px 0
 	flex(around)
 .check-row__el 
+	+below(768px)
+		width 100%
+		margin-bottom 10px
 	flex(mid)
 	fl()
 	width 30%
 .check-row__icon 
 	margin-bottom 10px
 	.icon 
+		+below(768px)
+			size 40px
 		fill #289284
 		size 80px
 .check-row__text 
+	+below(768px)
+		font-size 14px
+		color black
+		font-weight normal
 	text-align center
 	color #282e3b
 	font-family Lato

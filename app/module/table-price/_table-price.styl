@@ -8,14 +8,18 @@
 		line-height 24px
 		text-transform uppercase
 		border 0px
+		background #202a39!important
+		text-align center
 		&:nth-child(1)
 			width 60%
+			text-align left
 		&:nth-child(2)
 			text-align center
 			padding 15px
-	thead
-		background #282e3b 
 	th,td
+		+below(768px)
+			padding 20px 10px
+			vertical-align middle 
 		padding 15px 30px
 	td
 		background white 
@@ -28,6 +32,8 @@
 		&:nth-child(3)
 			text-align center
 .table-price__get
+	+below(768px)
+		font-size 10px
 	padding 10px 15px
 	border-radius 2px
 	border 1px solid #848484
@@ -37,4 +43,17 @@
 	&:hover
 		border 1px solid orange
 		color orange
+
+.st-head-row
+	+below(768px)
+		padding 10px!important
+.st-head-row.st-head-row-main
+	+below(768px)
+		display none
+.table-price-val
+	+below(768px)
+		font-size 18px
+		color black
+	font-weight 700
+	
 		

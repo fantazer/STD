@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+	//init responsive table
+	$('.table-price table').stacktable();
+
 	//Init fancybox
 	$(".fancybox").fancybox();
 	//Style scroll

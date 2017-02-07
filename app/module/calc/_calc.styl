@@ -1,19 +1,37 @@
 .container--calc
+	+below(768px)
+		padding 20px
 	flex(mid)
 	@extend .box
 	padding 80px 0px
 	fl()
 .calc-wraper
+	+below(768px)
+		width 100%
 	width 75%
 .calc__row
+	+below(1024px)
+		fw()
+	+below(768px)
+		margin-bottom 20px
 	flex(between)
 	margin-bottom 40px
 .calc__type
+	+below(1024px)
+		width 100%
+		margin-bottom 20px
 	width 30%
 .calc__value
+	+below(1024px)
+		width 100%
+	+below(768px)
+		fw()
 	f()
 	width 67%
 .style-label
+	+below(768px)
+		width 50%
+		margin-bottom 20px
 	width 33%
 .calc-get
 	margin-top 30px

@@ -2,16 +2,17 @@ mixin table-price()
 	//block table-price
 	.table-price
 		table
-			thead
-				tr
-					th Наш персонал
-					th Цена (руб.):
-					th
+			//thead
+			tr
+				th Наш персонал
+				th Цена (руб.):
+				th Получить
 			tbody
 				- for (var i = 0; i < 10; i++)
 					tr
-						td 1. Грузчики
-						td 3500
+						td Грузчики #{i}
+						td 
+							span.table-price-val 3500 руб
 						td 
 							a(href="#").table-price__get Связаться со мной
 

@@ -2,22 +2,27 @@
 	flex(between)
 	fw()
 .review-block
+	+below(640px)
+		width 100%
 	@extend .box
 	width 49%
 	padding 20px
 	margin-bottom 15px
 .review-block__text
+	+below(640px)
+		height auto
 	font-size 16px
 	font-family arial 
 	height 320px
 .review-block__info
+	margin-top 20px
 	flex(mid)
 	justify-content flex-start
 .review-block__avatar
 	bg-full()
 	round()
 	bsh()
-	size 60px
+	size 45px
 	margin-right 20px
 .review-block__name
 	font-weight 700 

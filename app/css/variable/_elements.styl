@@ -43,6 +43,9 @@
 	background orange
 	border 0
 .title-page
+	+below(768px)
+		font-size 24px
+		margin-bottom 25px
 	text-align center
 	color #282e3b
 	font-family OpenSans
@@ -50,11 +53,18 @@
 	font-weight 300
 	margin-bottom 90px
 .container--content
+	+below(768px)
+		fw()
+		margin-bottom 0
 	flex(between)
 	align-items flex-start
 .container__info
+	+below(768px)
+		width 100%
 	width 68%
 .container__toolbar
+	+below(768px)
+		width 100%
 	width 30%
 .link-more 
 	f()
@@ -64,6 +74,10 @@
 		.icon
 			fill orange
 .link-more__text
+	+below(768px)
+		color black
+		font-weight bold
+		font-size 12px
 	up()
 	tr(all)
 	color #a6a7a9
@@ -94,6 +108,12 @@ table tbody tr:nth-child(odd) td, table tbody tr:nth-child(odd) th
 	padding 20px
 
 .get-more
+	+below(768px)
+		margin 20px 0
+	+below(640px)
+		.btn--light
+			width 100%
+			text-align center
 	flex(mid)
 	margin 30px 0
 
@@ -137,6 +157,7 @@ table tbody tr:nth-child(odd) td, table tbody tr:nth-child(odd) th
 	height auto
 	display inline-block
 	size 20px
+	flex(mid)
 .select2-selection__rendered
 	padding 0!important
 	margin 0!important

@@ -108,8 +108,17 @@
 			margin-top -8%
 		margin-top -3%
 	.header-nav__toggle-el
+		+below(640px)
+			margin-left 20px
 		cp()
 		.icon
 			fill white
+	.header-logo--light
+		+below(840px)
+			display none
+	.header-logo--dark
+		+below(840px)
+			display block
+		display none
 	//.header-logo--small
 		

@@ -24,6 +24,7 @@
     "jQuery.dotdotdot": "^1.8.3",
     "select2": "^4.0.3",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
-    "fancybox": "^2.1.6"
+    "fancybox": "^2.1.6",
+    "stacktable.js": "^1.0.2"
   }
 }

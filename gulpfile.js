@@ -451,12 +451,12 @@ gulp.task('build:ftp',function(){
 		'copy:css',
 		'min:css',
 		'min:js',
-		'img',
+		//'img',
 		'svg',
 		'make',
-		'zip',
-		'screenshot',
-		'guide',
+		//'zip',
+		//'screenshot',
+		//'guide',
 		'ftp'
 		//'template'
 	)

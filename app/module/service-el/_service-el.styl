@@ -1,9 +1,16 @@
 .container__service
+	+below(1024px)
+		fw()
 	flex(between)
 	align-items inherit
 .service__col
+	+below(840px)
+		width 100%
 	width 49%
 .service__title
+	+below(768px)
+		font-size 18px
+		padding 10px
 	@extend .box
 	padding 20px
 	text-align center
@@ -15,6 +22,10 @@
 	fw()
 	align-items inherit
 .service__el
+	+below(640px)
+		width 100%
+		height 150px
+		flex(mid)
 	@extend .box
 	flex(between)
 	fl()
@@ -25,8 +36,14 @@
 .service__el-content
 	width 100%
 .service__el-header
+	+below(640px)
+		fw()
+		flex-flow column-reverse
 	flex(between)
 .service__el-info
+	+below(640px)
+		width 100%
+		text-align center
 	width 65%
 .service__el-type
 	color #a6a7a9
@@ -39,9 +56,13 @@
 		color orange
 		text-decoration underline
 .service__el-icon
+	+below(640px)
+		width 100%
 	width 30%
 	flex(mid)
 	.icon
 		size 50px
 		fill #006891
-//.service__el-get
+.service__el-get
+	+below(640px)
+		margin-top 10px

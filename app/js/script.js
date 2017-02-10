@@ -45,7 +45,8 @@ $(document).ready(function(){
 
 	//style select
 	$("select").select2({
-		  minimumResultsForSearch: Infinity,
+		width: 'element',
+		minimumResultsForSearch: Infinity
 	});
 
 	//add icon caret

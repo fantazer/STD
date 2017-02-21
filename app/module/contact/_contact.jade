@@ -11,9 +11,10 @@ mixin contact()
 					p ИНН: 771536905350 
 					p Индекс: 127549 
 			.contact__form
-				form(action="")
-					input(type="text" placeholder="Введите ваше имя")
-					input(type="text" placeholder="Введите ваш телефон")
-					textarea(name="", cols="30", rows="10" placeholder="Ваш телефон")
+				form(action="javascript:void(null);" id="contact-form" class="validate-form")
+					input(type="text" placeholder="Введите ваше имя" name="name")
+					input(type="text" placeholder="Введите ваш телефон" name="phone")
+					textarea(cols="30", rows="10" placeholder="Вашe сообщение" name="text")
 					input(type="submit" class="btn--light" value="Отправить")
+
 	//block contact end

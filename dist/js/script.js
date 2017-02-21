@@ -1,5 +1,54 @@
 $(document).ready(function(){
 
+	//validate
+
+	$('.validate-form').each(function() {   
+    $(this).validate({        
+		    	rules:{ //правила для полей 
+						name:{
+							required:true,
+						},
+						phone:{
+							required:true,
+							minlength:5,
+							number:true
+						},
+						comment:{
+							required:true,
+							minlength:5,
+						},
+					},
+					messages:{
+						name:{
+							required: 'Обязательное поле',
+						},
+						phone:{
+							required: 'Обязательное поле',
+							number:'Введите правильный номер',
+							minlength:'Номер должен быть длиннее',
+						},
+						comment:{
+							required: 'Обязательное поле',
+							minlength:'Сообщение должно быть длиннее',
+						},
+					},
+					submitHandler : function(form){ 
+							alert('Форма заполнена правильно');
+							//form.submit();
+				}
+		    });
+		});
+
+	//modal review
+	$('.get-modal-review').click(function(){
+			$('.modal-review').bPopup({
+				closeClass:'modal-close',
+					position:['auto','auto'], // position center
+					follow: [true,true],
+			}); 
+			event.preventDefault();
+	})
+
 	//init responsive table
 	$('.table-price table').stacktable();
 

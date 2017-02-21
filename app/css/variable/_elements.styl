@@ -87,6 +87,7 @@
 	margin-right 10px
 .link-more__icon
 	fill #a6a7a9
+	flex(mid)
 	.icon
 		tr(all)
 		size 15
@@ -241,7 +242,7 @@ table tbody tr:nth-child(odd) td, table tbody tr:nth-child(odd) th
 			border 0
 	.slider-review
 		+below(1024px)
-			height initial
+			height auto
 		height 400px
 		margin 0
 .container-review-news__el-review
@@ -288,3 +289,93 @@ table tbody tr:nth-child(odd) td, table tbody tr:nth-child(odd) th
 	background-color: rgba(0, 0, 0, 0.08)
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
 	background red 
+	
+
+.modal-cont
+	+below(640px)
+		width 95%
+		min-width 95% 
+		.btn--light
+			width 100%
+	position relative
+	background white
+	padding 40px 5%
+	width 40%
+	max-width 500px
+	min-width 400px
+	display none
+	input[type="text"],
+	textarea
+		width 100%
+		margin-bottom 20px
+		border-radius 2px
+		background-color rgba(220, 220, 229, 0.5)!important
+		background-color #eeeef3
+	input[type="submin"]
+		margin 0 auto
+	label.error
+		display block !important
+		margin-top -10px
+
+.modal-close
+	cp()
+	position absolute
+	top 20px
+	right 20px
+	size 20px
+.modal-title
+	text-align center
+	font-weight 700
+	font-size 22px
+	margin-bottom 10px
+	up()
+.modal-title-sub
+	color #a5a2b1
+	text-align center
+	margin-bottom 20px
+
+input.error
+	position relative
+	background-image url('../img/svg/close.svg') 
+	background-size  15px
+	background-repeat no-repeat
+	background-position  95%
+	padding-right 10px
+	fill red
+	color red
+
+.baner__form-phone+label
+	color white
+label.error
+	margin-bottom 10px
+	display inline-block!important
+.input-row
+	+below(640px)
+		width 100%
+
+.kama_breadcrumbs
+	font-size 12px
+	margin-bottom 50px
+	+below(768px)
+		margin-bottom 20px
+	span
+		padding-right 5px
+
+.navigation.pagination
+	flex(mid)
+	width 100%
+	margin 20px 0
+
+.page-numbers
+	tr(all)
+	padding 10px
+	border 1px solid orange
+	color black!important
+	font-weight 600
+	&:hover
+		background orange
+		color white!important
+.page-numbers.current
+	background orange
+	color white!important
+		

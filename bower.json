@@ -25,6 +25,8 @@
     "select2": "^4.0.3",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "fancybox": "^2.1.6",
-    "stacktable.js": "^1.0.2"
+    "stacktable.js": "^1.0.2",
+    "bPopup": "bpopup#^0.11.0",
+    "jquery-validation": "^1.16.0"
   }
 }

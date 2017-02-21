@@ -10,8 +10,9 @@ mixin baner()
 					.baner__content
 						.baner__title Аутсорсинг и лизинг персонала.Постоянный и временный персонал
 						.baner__form
-							form(action="").baner__form-el
-								input(type="text" placeholder="Введите ваш номер телефона" class="baner__form-phone")
+							form(action="javascript:void(null);").baner__form-el.validate-form
+								.input-row
+									input(type="text" placeholder="Введите ваш номер телефона" class="baner__form-phone" name="phone")
 								input(type="submit" value="Связаться со мной" class="btn baner__form-get")
 						.baner__text Мы специализируемся на предоставлении услуг лизинга персонала, аутстаффинга, организации бригад работников для складской логистики, общественного питания, торговли и производства и оперативном управлении этими бригадами.
 			.baner__el(style="background-image:url('img/baner-2.jpg')")
@@ -20,8 +21,9 @@ mixin baner()
 					.baner__content
 						.baner__title Аутсорсинг и лизинг персонала.Постоянный и временный персонал
 						.baner__form
-							form(action="").baner__form-el
-								input(type="text" placeholder="Введите ваш номер телефона" class="baner__form-phone")
+							form(action="javascript:void(null);").baner__form-el.validate-form
+								.input-row
+									input(type="text" placeholder="Введите ваш номер телефона" class="baner__form-phone" name="phone")
 								input(type="submit" value="Связаться со мной" class="btn baner__form-get")
 						.baner__text Мы специализируемся на предоставлении услуг лизинга персонала, аутстаффинга, организации бригад работников для складской логистики, общественного питания, торговли и производства и оперативном управлении этими бригадами.
 

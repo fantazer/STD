@@ -460,9 +460,9 @@
 								</div>
 							</div>
 							<div class="footer-form__wrap">
-								<form action="" class="footer-form__el">
-									<input type="text" placeholder="Введите ваше имя" />
-									<input type="text" placeholder="Введите ваш номер телефона" />
+								<form action="" id="footer-form" class="footer-form__el validate-form">
+									<input type="text" placeholder="Введите ваше имя" name="name" />
+									<input type="text" placeholder="Введите ваш номер телефона" name="phone" />
 									<input type="submit" value="Отправить" class="btn" />
 								</form>
 							</div>
@@ -474,6 +474,19 @@
 				</div>
 			</div>
 			<!--block footer end-->
+			<!--modal review-->
+			<div class="modal-cont modal-review">
+				<div class="modal-title">Оставить отзыв</div>
+				<div class="modal-title-sub">Мы будем рады узнать ваши пожелания и предложения</div>
+				<svg class="modal-close">
+					<use xlink:href="#close"></use>
+				</svg>
+				<form action="javascript:void(null);" class="validate-form">
+					<input type="text" placeholder="Введите ваше имя" name="name" />
+					<textarea cols="30" rows="10" placeholder="Введите ваш комментарий" name="comment"></textarea>
+					<input type="submit" value="Написать отзыв" class="btn--light" />
+				</form>
+			</div>
 		</div>
 		<script src="js/combined.js"></script>
 		<script src="js/script.js"></script>

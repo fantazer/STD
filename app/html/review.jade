@@ -17,7 +17,8 @@ include ../module/**/*.jade
 					.container__toolbar
 						.send-review
 							.send-review__title Оставьте отзыв
-							+get-more('Написать отзыв')
+							.get-more.get-modal-review
+								a(href="#").btn--light Написать отзыв
 						+reward()
 						+knowlage()
 						+keys()

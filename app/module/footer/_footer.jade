@@ -23,11 +23,22 @@ mixin footer()
 							.footer-contact__phone +7 495 401 73 78
 							.footer-contact__adr ул. Варшавское шоссе д. 125
 					.footer-form__wrap
-						form(action="").footer-form__el
-							input(type="text" placeholder="Введите ваше имя")
-							input(type="text" placeholder="Введите ваш номер телефона")
+						form(action="").footer-form__el#footer-form.validate-form
+							input(type="text" placeholder="Введите ваше имя" name="name")
+							input(type="text" placeholder="Введите ваш номер телефона" name="phone")
 							input(type="submit" class="btn" value="Отправить")
 			.footer-copy
 				.footer-copy__text © 2006 -2016 ООО «СервисСервис»
-
+		
 	//block footer end
+
+	//modal review
+	.modal-cont.modal-review
+		.modal-title Оставить отзыв
+		.modal-title-sub Мы будем рады узнать ваши пожелания и предложения
+		+icon("close","modal-close")
+
+		form(action="javascript:void(null);").validate-form
+			input(type="text" placeholder="Введите ваше имя" name="name")
+			textarea( cols="30", rows="10" placeholder="Введите ваш комментарий" name="comment")
+			input(type="submit" class="btn--light" value="Написать отзыв")

@@ -42,3 +42,8 @@ mixin footer()
 			input(type="text" placeholder="Введите ваше имя" name="name")
 			textarea( cols="30", rows="10" placeholder="Введите ваш комментарий" name="comment")
 			input(type="submit" class="btn--light" value="Написать отзыв")
+
+	.modal-cont.modal-true
+		.modal-true-wrap
+			+icon("check","icon")
+			.modal-title Отлично! <br> Все получилось

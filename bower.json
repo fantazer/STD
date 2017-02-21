@@ -18,7 +18,7 @@
     "components-font-awesome": "~4.3.0",
     "flexbox-grid-stylus": "^3.1.0",
     "owl.carousel": "OwlCarousel2#^2.1.5",
-    "svg4everybody": "^2.1.3"
+    "svg4everybody": "2.1.3"
   },
   "devDependencies": {
     "jQuery.dotdotdot": "^1.8.3",
@@ -27,6 +27,7 @@
     "fancybox": "^2.1.6",
     "stacktable.js": "^1.0.2",
     "bPopup": "bpopup#^0.11.0",
-    "jquery-validation": "^1.16.0"
+    "jquery-validation": "^1.16.0",
+    "svg4everybody": "2.1.3"
   }
 }

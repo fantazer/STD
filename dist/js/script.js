@@ -2,53 +2,75 @@ $(document).ready(function(){
 
 	//validate
 
-	$('.validate-form').each(function() {   
-    $(this).validate({        
-		    	rules:{ //правила для полей 
-						name:{
-							required:true,
+		$('.validate-form').each(function() {   
+	    $(this).validate({        
+			    	rules:{ //правила для полей 
+							name:{
+								required:true,
+							},
+							phone:{
+								required:true,
+								minlength:5,
+								number:true
+							},
+							comment:{
+								required:true,
+								minlength:5,
+							},
 						},
-						phone:{
-							required:true,
-							minlength:5,
-							number:true
+						messages:{
+							name:{
+								required: 'Обязательное поле',
+							},
+							phone:{
+								required: 'Обязательное поле',
+								number:'Введите правильный номер',
+								minlength:'Номер должен быть длиннее',
+							},
+							comment:{
+								required: 'Обязательное поле',
+								minlength:'Сообщение должно быть длиннее',
+							},
 						},
-						comment:{
-							required:true,
-							minlength:5,
-						},
-					},
-					messages:{
-						name:{
-							required: 'Обязательное поле',
-						},
-						phone:{
-							required: 'Обязательное поле',
-							number:'Введите правильный номер',
-							minlength:'Номер должен быть длиннее',
-						},
-						comment:{
-							required: 'Обязательное поле',
-							minlength:'Сообщение должно быть длиннее',
-						},
-					},
-					submitHandler : function(form){ 
-							alert('Форма заполнена правильно');
-							//form.submit();
-				}
-		    });
-		});
-
-	//modal review
-	$('.get-modal-review').click(function(){
-			$('.modal-review').bPopup({
-				closeClass:'modal-close',
-					position:['auto','auto'], // position center
-					follow: [true,true],
-			}); 
-			event.preventDefault();
-	})
-
+						submitHandler : function(form){ 
+								$('.modal-close').click();
+								setTimeout(function(){
+											$('.modal-true').bPopup({
+												closeClass:'modal-close',
+													position:['auto','auto'], // position center
+													follow: [true,true],
+													autoClose: 2000
+											}); 
+								},2000)
+					}
+			    });
+			});
+		
+		//modal review
+		$('.get-modal-review').click(function(){
+				$('.modal-review').bPopup({
+					closeClass:'modal-close',
+						position:['auto','auto'], // position center
+						follow: [true,true],
+				}); 
+				event.preventDefault();
+		})
+		$('.title-page').click(function(){
+				$('.modal-true').bPopup({
+					closeClass:'modal-close',
+						position:['auto','auto'], // position center
+						follow: [true,true],
+				}); 
+				event.preventDefault();
+		})
+		$('.get-modal-order').click(function(){
+				$('.modal-order').bPopup({
+					closeClass:'modal-close',
+						position:['auto','auto'], // position center
+						follow: [true,true],
+				}); 
+				event.preventDefault();
+		})
 	//init responsive table
 	$('.table-price table').stacktable();
 
@@ -56,7 +78,7 @@ $(document).ready(function(){
 	$(".fancybox").fancybox();
 	//Style scroll
 	$(".review-block__text").mCustomScrollbar({
-	  autoDraggerLength: false // size druger
+	  autoDraggerLength: true // size druger
 	});
 	/* ###### For only ies  ######*/
 	//if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){

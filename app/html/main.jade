@@ -5,6 +5,15 @@ include ../module/**/*.jade
 	+baner()
 	.container-general
 		.main-cont
+			+slider-pers()
+			//container-map
+			.container-map
+				.container-map__el
+					.container-map__title Мы работаем с клиентами по всей России
+				.container-map__rewards
+					+reward()
+
+			+slider-clients()
 			+numbers()
 			//container-review
 			.container-review-news
@@ -15,16 +24,80 @@ include ../module/**/*.jade
 						- for (var i = 0; i < 3; i++)
 							+news-el()
 			+two-botton-block()
-			//container-map
-			.container-map
-				.container-map__el
-					.container-map__title Мы работаем с клиентами по всей России
-				.container-map__rewards
-					+reward()
-		+slider-clients()
 		.main-cont
 			+advant()
-		+slider-pers()
+			.adv-wrap
+				.adv-wrap-title.type--lg.type--center.type--bold Работа с нами
+				.adv-row
+					.adv-title__icon
+						+icon("check","icon")
+					.adv-content
+						.adv-title	 Cрочное увеличение колва сотрудников
+						.adv-text Cезонное увеличение объемов,переезд предприятия или офиса,дополнительные работы, уборка урожая,смена графика работы,экспозиция,-все это требует срочного увеличения кол-ва специализированных работников.Мы предоставляем персонал тогда,когда требуется и столько,сколько требуется.
+				.adv-row
+					.adv-title__icon
+						+icon("check","icon")
+					.adv-content
+						.adv-title	 Моментальная замена в случае необходимости
+						.adv-text Нерадивые работники-это головная боль любой компании. Наша служба безопасности и контноля качества проводит проверку всех сотрутдиков  компании,И в случае необходисти готова произвести замену любого рабочего.
+				.adv-row
+					.adv-title__icon
+						+icon("check","icon")
+					.adv-content
+						.adv-title	 Материальная отвественность
+						.adv-text Мы несем полную материальную ответственность. Работаем по системе постоплаты,что гарантирует выполнение наших обязательств.
+				.adv-row
+					.adv-title__icon
+						+icon("check","icon")
+					.adv-content
+						.adv-title	 Юридическая ответственность
+						.adv-text Надежная работа обеспечивается сопровождем профессиональных юристов.
+
+				.adv-row
+					.adv-title__icon
+						+icon("check","icon")
+					.adv-content
+						.adv-title Сложные и удаленные объекты работы
+						.adv-text Мобильные бригады предоставляются в любую точку России.
+
+				.adv-row
+					.adv-title__icon
+						+icon("check","icon")
+					.adv-content
+						.adv-title Улучшение общего качества труда 
+						.adv-text Достигается при совместном использовании аутсорсинга и собственного персонала. При этом создается плодотворная конкуренция рабочих бригад,которая приводил к общему улучшению качества работы.
+
+				.adv-row
+					.adv-title__icon
+						+icon("check","icon")
+					.adv-content
+						.adv-title Стабильность работы 
+						.adv-text Работу любого отдела лучше дублировать.Это могут быть несколько аутсорсинговых компаний или совместная работа ваших и приходящих сотрудников. При этом вы будете застрахованы от любых сбоев в работе.
+		
+			.math
+				.math-title.type--lg.type--center.type--bold Давайте посчитаем:
+				.math-wrap
+					.math-cont
+						.math-el
+							.math-pay.math-pay--bad 30 000 руб
+							.math-el-text Деньги, которые получает грузчик на руки, работая 8 часов 5 дней в неделю. Фактически, вместо 180, он работает 149 часов в месяц (12 дней праздничных выходных,28 дней отпуска,7 дней больничных )
+						.math-el
+							.math-pay.math-pay--bad 4482 руб
+							.math-el-text НДФЛ(Налог на доходы физ.лиц,13 %, статья 224,пункт 1 НК РФ)
+						.math-el
+							.math-pay.math-pay--bad 10346 руб
+							.math-el-text Страховые взносы  30 %( статья 12 ФЗ № 212)  
+						.math-el
+							.math-pay.math-pay--bad 300 руб
+							.math-el-text Спецодежда(Форма, перчатки)
+						.math-el.math-total
+							.math-pay.math-pay--bad ИТОГО: 45128 руб
+							.math-el-text тратить на расчёт 1 рабочего в месяц.
+						.math-title.type--lg.type--center.type--bold Наша цена:
+						.math-el.math-total
+							.math-pay.math-pay--good 27714 руб
+							.math-el-text Стоимость наших услуг по предоставлению персонала составляет <br>186р/ч=27714р/месяц ( 149 часов).
+				
 		.main-cont
 			.more-text
 				.type--lg.type--center.type--bold Подробнее о STD Group

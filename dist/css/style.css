@@ -461,6 +461,17 @@ body > svg {
   .container__info {
     width: 100%;
   }
+  .container__info p,
+  .container__info li {
+    line-height: 18px;
+  }
+}
+.container__info p,
+.container__info li {
+  line-height: 24px;
+}
+.container__info li {
+  margin-bottom: 20px;
 }
 .container__toolbar {
   width: 30%;
@@ -523,6 +534,8 @@ body > svg {
 .box,
 .container__info--light,
 .more-text,
+.adv-wrap,
+.math,
 .container--calc,
 .contact,
 .keys,
@@ -1052,6 +1065,183 @@ label.error {
   width: 90px;
   height: 90px;
   margin-bottom: 20px;
+}
+.calc-total {
+  text-align: center;
+  display: none;
+  margin: 30px 0;
+}
+.calc-total span {
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.calc-get-contact {
+  display: none;
+}
+.adv-wrap-title {
+  padding: 20px 0;
+}
+.adv-wrap {
+  margin-bottom: 15px;
+}
+.adv-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .adv-row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+.adv-row:nth-child(even) {
+  background: #eef6f7;
+}
+@media only screen and (max-width: 768px) {
+  .adv-title__icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.adv-title__icon .icon {
+  width: 50px;
+  height: 50px;
+  fill: #2ecc40;
+  margin-right: 20px;
+}
+.adv-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  .adv-title {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .adv-text {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.math {
+  margin-bottom: 15px;
+}
+.math-title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 30px 0;
+  font-size: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .math-title {
+    font-size: 16px;
+  }
+}
+.math-pay {
+  padding: 10px 20px;
+  background: #ed764e;
+  color: #fff;
+  width: 250px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .math-pay {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+.math-el {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 40px;
+}
+@media only screen and (max-width: 768px) {
+  .math-el {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 20px;
+  }
+}
+.math-el:nth-child(odd) {
+  background: #eef6f7;
+}
+.math-el-text {
+  width: -webkit-calc(100% - 250px);
+  width: calc(100% - 250px);
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .math-el-text {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.math-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.math-pay--good {
+  background: #0d9a5c;
 }
 .clear {
   clear: both;
@@ -2308,7 +2498,7 @@ body {
   z-index: 2;
 }
 .baner__el {
-  height: 100vh;
+  height: 70vh;
   padding-top: 8%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2438,6 +2628,14 @@ body {
 @media only screen and (max-width: 840px) {
   .baner__text {
     display: none;
+  }
+}
+.slider-baner {
+  margin-bottom: 80px;
+}
+@media only screen and (max-width: 768px) {
+  .slider-baner {
+    margin-bottom: 20px;
   }
 }
 .baner {
@@ -3620,7 +3818,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px;
-  margin-top: 5%;
+  margin-top: 20pxs;
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
@@ -3633,7 +3831,7 @@ body {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 .numbers__el {
@@ -3763,7 +3961,7 @@ body {
           flex-wrap: wrap;
 }
 .review-block {
-  width: 49%;
+  width: 100%;
   padding: 20px;
   margin-bottom: 15px;
 }
@@ -3773,12 +3971,12 @@ body {
   }
 }
 .review-block__text {
-/*+below(640px)
-		height auto*/
   font-size: 16px;
   font-family: arial;
-  height: 320px;
+  line-height: 24px;
 }
+font-style italic,
+color #4e4e4e,
 .review-block__info {
   margin-top: 20px;
   display: -webkit-box;
@@ -3828,6 +4026,11 @@ body {
 }
 .reward__wraper {
   padding: 40px 20px 0px 20px;
+}
+@media only screen and (max-width: 768px) {
+  .reward__wraper {
+    padding: 20px 20px 0px 20px;
+  }
 }
 .reward__slider-el-img {
   background-size: cover;
@@ -4202,14 +4405,9 @@ body {
 .slider-review__text {
   color: #282e3b;
   font-family: Arial;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   margin-bottom: 20px;
-}
-@media only screen and (max-width: 768px) {
-  .slider-review__text {
-    font-size: 14px;
-  }
 }
 .slider-review__user {
   display: -webkit-box;

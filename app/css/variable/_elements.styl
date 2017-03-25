@@ -61,7 +61,13 @@
 .container__info
 	+below(768px)
 		width 100%
+		p,li
+			line-height 18px
 	width 68%
+	p,li
+		line-height 24px
+	li
+		margin-bottom 20px
 .container__toolbar
 	+below(768px)
 		width 100%
@@ -397,3 +403,96 @@ label.error
 		fill white
 		size 90px
 		margin-bottom 20px
+.calc-total
+	text-align center
+	display none
+	margin 30px 0
+	span
+		font-size 40px
+		margin-bottom 10px
+		display inline-block
+
+.calc-get-contact
+	display none
+.adv-wrap-title
+	padding 20px 0
+	
+.adv-wrap
+	margin-bottom 15px
+	@extend .box
+.adv-row
+	+below(768px)
+		fw()
+	f()
+	padding 30px
+	&:nth-child(even)
+		background #eef6f7 
+.adv-title__icon
+	+below(768px)
+		flex(mid)
+		width 100%
+		margin-bottom 20px
+	.icon
+		size 50px
+		fill green
+		margin-right 20px
+.adv-title
+	+below(768px)
+		font-size 16px
+		text-align center
+	font-size 20px
+	margin-bottom 10px
+	font-weight 600 
+.adv-text
+	+below(768px)
+		font-size 14px
+		text-align center
+	//text-align center
+
+.math
+	margin-bottom 15px
+	@extend .box
+.math-title
+	+below(768px)
+		font-size 16px
+	font-size 20px
+	font-weight 600 
+	padding 30px 0
+	font-size 24px
+.math-pay
+	+below(768px)
+		width 100%
+		margin-bottom 20px
+		margin-right 0
+	padding 10px 20px
+	background #ed764e
+	color white 
+	width 250px
+	text-align center
+	font-size 18px
+	font-weight 600
+	br(4px) 
+	flex(mid)
+	margin-right 50px
+.math-el
+	+below(768px)
+		fw()
+		padding 20px
+	flex(mid)
+	padding 20px 40px
+	&:nth-child(odd)
+		background #eef6f7 
+	//align-items flex-start
+.math-el-text
+	+below(768px)
+		width 100%
+		font-size 14px
+		text-align center
+	width calc(100% - 250px) 
+	font-size 16px
+.math-wrap
+	flex(mid)
+.math-cont
+	//width 60%
+.math-pay--good
+	background #0D9A5C 

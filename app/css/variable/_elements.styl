@@ -434,7 +434,7 @@ label.error
 		margin-bottom 20px
 	.icon
 		size 50px
-		fill green
+		fill #0a9a1a
 		margin-right 20px
 .adv-title
 	+below(768px)
@@ -447,6 +447,9 @@ label.error
 	+below(768px)
 		font-size 14px
 		text-align center
+	font-family 'Open Sans', sans-serif;
+	font-size 14px
+	line-height 22px
 	//text-align center
 
 .math
@@ -489,10 +492,30 @@ label.error
 		font-size 14px
 		text-align center
 	width calc(100% - 250px) 
-	font-size 16px
+	font-family 'Open Sans', sans-serif;
+	font-size 14px
+	line-height 22px
 .math-wrap
 	flex(mid)
 .math-cont
 	//width 60%
 .math-pay--good
 	background #0D9A5C 
+.math-pay--bad
+	background-image: linear-gradient(30deg, #f3800c 0%, #ea3d03 80%);
+.title-icon
+	margin-right 20px
+	.icon
+		size 50px
+		+below(768px)
+			size 40px
+.type--icon
+	f()
+	justify-content center	
+	align-items center
+.title-icon--orange
+	.icon
+		fill orange
+.title-icon--green
+	.icon
+		fill #0d9a5c
